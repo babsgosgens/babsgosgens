@@ -190,7 +190,7 @@ body a:hover {
   content: "";
   position: absolute;
   display: block;
-  border-right: 1px solid #1A1A1A;
+  border-right: 1px solid #2C2C2C;
   height: 110%;
   left: 50%;
   left: calc(50% - 1px);
@@ -685,7 +685,7 @@ body a:hover {
   margin-right: 0; }
 
 .single .wp-link-pages span {
-  color: #1A1A1A; }
+  color: #2C2C2C; }
 
 .single .wp-link-pages {
   color: #D7B065; }
@@ -1203,7 +1203,7 @@ footer ul {
   display: block;
   height: 77px;
   width: 2px;
-  background: #1A1A1A;
+  background: #2C2C2C;
   position: absolute;
   left: 50%;
   margin-left: -2px;
@@ -1238,7 +1238,7 @@ footer ul {
   display: block;
   height: 100%;
   width: 2px;
-  background: #1A1A1A;
+  background: #2C2C2C;
   position: absolute;
   left: 50%;
   margin-left: -2px;
@@ -1250,7 +1250,7 @@ footer ul {
   height: 2px;
   width: 100%;
   position: absolute;
-  background: #1A1A1A;
+  background: #2C2C2C;
   bottom: 0; }
 
 .our-position-left {
@@ -1278,7 +1278,7 @@ ul#footer-sidebar {
   padding: 30px 0;
   font-size: 14px;
   line-height: 28px;
-  border-bottom: 2px solid #1A1A1A; }
+  border-bottom: 2px solid #2C2C2C; }
 
 h4.widgettitle {
   font-size: 16px;
