@@ -903,7 +903,7 @@ body a:hover {
   cursor: pointer;
   border-bottom: 2px solid;
   padding: 10px 30px;
-  color: #FFF !important; }
+  color: #000; }
 
 .more-posts-portfolio:before {
   content: '';
