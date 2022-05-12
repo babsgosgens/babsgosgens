@@ -32,31 +32,31 @@ body
     font-size: 17px;
     line-height: 35px;
     font-weight: 400;
-    color: #000;
-    background-color: #fff;
+    color: $c-theme-bg-dark-content;
+    background-color: $c-theme-bg-light;
 }
 
 body a
 {
     text-decoration: none;
-    color: #000;
+    color: $c-theme-bg-dark-content;
     transition: color .2s linear;
 }
 
 body a:hover
 {
-    color: #d7b065;
+    color: $c-theme-accent;
 }
 
 ::selection
 {
-    background-color: #fae3b5;
+    background-color: $c-theme-accent-muted;
 }
 
 .body-wrapper
 {
     margin: 30px;
-    background-color: #fff;
+    background-color: $c-theme-bg-light;
     position: relative;
 }
 
@@ -68,7 +68,7 @@ body a:hover
     width: 100%;
     height: 100%;
     z-index: 99999;
-    background-color: #fff;
+    background-color: $c-theme-bg-light;
 }
 
 .animate
@@ -178,7 +178,7 @@ body a:hover
 {
     height: 3px;
     margin-bottom: 6px;
-    background-color: #000;
+    background-color: $c-theme-bg-dark;
 }
 
 #toggle .second-menu-line
@@ -206,7 +206,7 @@ body a:hover
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: $c-theme-bg-dark;
     top: 0;
     left: 0;
     z-index: 99;
@@ -232,7 +232,7 @@ body a:hover
 
 .menu-holder
 {
-    color: #fff;
+    color: $c-theme-bg-dark-content;
     position: relative;
     width: 1270px;
     max-width: 100%;
@@ -262,7 +262,7 @@ body a:hover
     content: "";
     position: absolute;
     display: block;
-    border-right: 1px solid #1a1a1a;
+    border-right: 1px solid $c-theme-bg-dark-accent-muted;
     height: 110%;
     left: 50%;
     left: calc(50% - 1px);
@@ -282,7 +282,7 @@ body a:hover
 
 .menu-left-text a
 {
-    color: #fff;
+    color: $c-theme-bg-dark-content;
     border-bottom: 2px solid;
     display: inline-block;
 }
@@ -312,7 +312,7 @@ body a:hover
 {
     font-size: 24px;
     line-height: 24px;
-    color: #fff;
+    color: $c-theme-bg-dark-content;
 }
 
 .main-menu.sm-clean .sub-menu a,  .main-menu.sm-clean .children a
@@ -324,12 +324,12 @@ body a:hover
 
 .sm-clean li a.current, .sm-clean .current_page_item a
 {
-    color: #d7b065;
+    color: $c-theme-accent;
 }
 
 .main-menu.sm-clean a:hover
 {
-    color: #d7b065;
+    color: $c-theme-accent;
 }
 
 #header-main-menu .search-form
@@ -342,13 +342,13 @@ body a:hover
     font-family: 'Roboto', serif;
     max-width: 350px;
     width: 90%;
-    color: #fff;
+    color: $c-theme-bg-dark-content;
     font-weight: 300;
     font-size: 24px;
     line-height: 24px;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid $c-theme-bg-dark;
     padding-bottom: 5px;
     text-align: left;
     padding-top: 8px;
@@ -370,14 +370,14 @@ body a:hover
 
 .widget_search .search-field:focus, #header-main-menu .search-field:focus
 {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid $c-theme-bg-dark-content;
 }
 
 .widget_search .search-field::-webkit-input-placeholder, #header-main-menu .search-field::-webkit-input-placeholder
 {
     font-family: 'Roboto', serif;
     font-weight: 300;
-    color: #fff;
+    color: $c-theme-bg-dark-content;
     font-size: 24px;
     line-height: 24px;
     opacity: 1;
@@ -393,7 +393,7 @@ body a:hover
 {
     font-family: 'Roboto', serif;
     font-weight: 300;
-    color: #fff;
+    color: $c-theme-bg-dark-content;
     font-size: 24px;
     line-height: 24px;
     opacity: 1;
@@ -409,7 +409,7 @@ body a:hover
 {
     font-family: 'Roboto', serif;
     font-weight: 300;
-    color: #fff;
+    color: $c-theme-bg-dark-content;
     font-size: 24px;
     line-height: 24px;
     opacity: 1;
@@ -425,7 +425,7 @@ body a:hover
 {
     font-family: 'Roboto', serif;
     font-weight: 300;
-    color: #fff;
+    color: $c-theme-bg-dark-content;
     font-size: 24px;
     line-height: 24px;
     opacity: 1;
@@ -451,7 +451,7 @@ body a:hover
     font-weight: 400;
     line-height: 100%;
     font-size: 10px;
-    color: #fff;
+    color: $c-theme-bg-dark-content;
     letter-spacing: 2px;
     padding-left: 2px;
     text-transform: uppercase;
@@ -466,20 +466,20 @@ body a:hover
 
 .slick-dots li button:before
 {
-    background-color: #d5d5d5;
+    background-color: $c-grey-02;
     opacity: 1;
     transition: background-color .3s ease, opacity .3s ease;
 }
 
 .slick-dots li:hover button:before
 {
-    background-color: #d7b065;
+    background-color: $c-theme-accent;
     opacity: 0.3;
 }
 
 .slick-dots li.slick-active button:before
 {
-    background-color: #d7b065;
+    background-color: $c-theme-accent;
 }
 
 
@@ -564,13 +564,13 @@ body a:hover
 
 .post-num .separator
 {
-    color: #eaeaea;
+    color: $c-grey-01;
     vertical-align: -20px;
 }
 
 .post-num .total-posts
 {
-    color: #eaeaea;
+    color: $c-grey-01;
     vertical-align: -40px;
     margin-left: -10px
 }
@@ -659,7 +659,7 @@ body a:hover
     cursor: pointer;
     border-bottom: 2px solid;
     padding: 10px 30px;
-    color: #000 !important;
+    color: $c-theme-bg-dark-content !important;
 }
 
 .more-posts-index:before
@@ -711,7 +711,7 @@ body a:hover
 
 .page .site-content
 {
-    color: #4b4b4b;
+    color: $c-grey-04;
 }
 
 .page h1.entry-title
@@ -731,7 +731,7 @@ body a:hover
 {
     position: relative;
     display: inline-block;
-    color: #d7b065;
+    color: $c-theme-accent;
 }
 
 .page h1.entry-title a:after
@@ -740,7 +740,7 @@ body a:hover
     display: block;
     width: 0;
     height: 3px;
-    background-color: #d7b065;
+    background-color: $c-theme-accent;
     transition: width .3s;
     position: absolute;
     left: 0;
@@ -777,7 +777,7 @@ body a:hover
     font-size: 15px;
     line-height: 15px;
     font-style: italic;
-    color: #b4b4b4;
+    color: $c-grey-03;
     font-weight: 400;
 }
 
@@ -822,7 +822,7 @@ body a:hover
     width: 100%;
     vertical-align: middle;
     overflow: hidden;
-    background-color: #d5d5d5;
+    background-color: $c-grey-02;
     max-width: 500px;
 }
 
@@ -842,7 +842,7 @@ body a:hover
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #000;
+    background-color: $c-theme-bg-dark;
 }
 
 
@@ -852,14 +852,14 @@ body a:hover
 
 .single .site-content
 {
-    color: #4b4b4b;
+    color: $c-grey-04;
 }
 
 .single h1.entry-title
 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    color: #000;
+    color: $c-theme-bg-dark-content;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 40px;
@@ -876,7 +876,7 @@ body a:hover
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #000;
+    color: $c-theme-bg-dark-content;
 }
 
 .single-post .entry-content
@@ -892,7 +892,7 @@ body a:hover
 
 .single .post-num .current-post
 {
-    color: #000;
+    color: $c-theme-bg-dark-content;
 }
 
 .tags-holder
@@ -904,7 +904,7 @@ body a:hover
 
 .tags-holder a
 {
-    color: #b1b1b1;
+    color: $c-grey-03;
     border: 1px solid;
     text-decoration: none;
     margin-right: 20px;
@@ -923,12 +923,12 @@ body a:hover
 
 .single .wp-link-pages span
 {
-    color: #191919;
+    color: $c-theme-bg-dark-accent-muted;
 }
 
 .single .wp-link-pages
 {
-    color: #d7b065;
+    color: $c-theme-accent;
 }
 
 .single .nav-links
@@ -945,7 +945,7 @@ body a:hover
     position: absolute;
     width: 2px;
     height: 100%;
-    background-color: #000;
+    background-color: $c-theme-bg-dark;
     left: 50%;
     margin-left: -2px;
 }
@@ -1011,8 +1011,8 @@ body a:hover
 
 .page-numbers.current
 {
-    border: 1px solid #d7b065;
-    color: #d7b065;
+    border: 1px solid $c-theme-accent;
+    color: $c-theme-accent;
     padding: 7px 12px;
     border-radius: 90%;
 }
@@ -1025,7 +1025,7 @@ body a:hover
 
 .page-numbers:hover
 {
-    color: #d7b065;
+    color: $c-theme-accent;
 }
 
 
@@ -1081,7 +1081,7 @@ body a:hover
     content: "\201C";
     font-size: 470px;
     line-height: 100%;
-    color: #fae3b5;
+    color: $c-theme-accent-muted;
     margin-bottom: -346px;
     margin-top: -50px;
 }
@@ -1168,7 +1168,7 @@ body a:hover
 .portfolio-text-holder .portfolio-category a
 {
     font-weight: 700;
-    color: #d7b065;
+    color: $c-theme-accent;
     margin-right: 0;
 }
 
@@ -1210,7 +1210,7 @@ body a:hover
     cursor: pointer;
     border-bottom: 2px solid;
     padding: 10px 30px;
-    color: #000 !important;
+    color: $c-theme-bg-dark-content !important;
 }
 
 .more-posts-portfolio:before
@@ -1431,7 +1431,7 @@ body a:hover
     font-family: 'Playfair Display', serif;
     font-size: 46px;
     line-height: 50px;
-    color: #000;
+    color: $c-theme-bg-dark-content;
     padding: 0;
     font-weight: 400;
 }
@@ -1442,12 +1442,12 @@ body a:hover
     width: 770px;
     margin: 0 auto;
     font-size: 22px;
-    color: #4b4b4b;
+    color: $c-grey-04;
 }
 
 .contact-form input[type=text], .contact-form input[type=email], .contact-form textarea
 {
-    color: #4b4b4b;
+    color: $c-grey-04;
     border: 0;
     border-bottom: 1px solid;
     height: 28px;
@@ -1463,7 +1463,7 @@ body a:hover
 .contact-form input[type=text]::-webkit-input-placeholder, .contact-form input[type=email]::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder
 {
     font-family: 'Roboto', serif;
-    color: #4b4b4b;
+    color: $c-grey-04;
     font-weight: 300;
     font-size: 18px;
     line-height: 25px;
@@ -1471,7 +1471,7 @@ body a:hover
 .contact-form input[type=text]::-moz-placeholder, .contact-form input[type=email]::-moz-placeholder, .contact-form textarea::-moz-placeholder
 {
     font-family: 'Roboto', serif;
-    color: #4b4b4b;
+    color: $c-grey-04;
     font-weight: 300;
     font-size: 18px;
     line-height: 25px;
@@ -1480,7 +1480,7 @@ body a:hover
 .contact-form input[type=text]:-ms-input-placeholder, .contact-form input[type=email]:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder
 {
     font-family: 'Roboto', serif;
-    color: #4b4b4b;
+    color: $c-grey-04;
     font-weight: 300;
     font-size: 18px;
     line-height: 25px;
@@ -1488,7 +1488,7 @@ body a:hover
 .contact-form input[type=text]:-moz-placeholder, .contact-form input[type=email]:-moz-placeholder, .contact-form textarea:-moz-placeholder
 {
     font-family: 'Roboto', serif;
-    color: #4b4b4b;
+    color: $c-grey-04;
     font-weight: 300;
     font-size: 18px;
     line-height: 25px;
@@ -1601,14 +1601,14 @@ footer ul
     margin-top: 70px;
     padding-bottom: 110px;
     clear: both;
-    color: #fff;
+    color: $c-theme-bg-dark-content;
     text-align: center;
-    background: #000;
+    background: $c-theme-bg-dark;
 }
 
 .footer a
 {
-    color: #fff;
+    color: $c-theme-bg-dark-content;
 }
 
 .footer-logo
@@ -1627,7 +1627,7 @@ footer ul
     display: block;
     height: 77px;
     width: 2px;
-    background: #1a1a1a;
+    background: $c-theme-bg-dark-accent-muted;
     position: absolute;
     left: 50%;
     margin-left: -2px;
@@ -1676,7 +1676,7 @@ footer ul
     display: block;
     height: 100%;
     width: 2px;
-    background: #1a1a1a;
+    background: $c-theme-bg-dark-accent-muted;
     position: absolute;
     left: 50%;
     margin-left: -2px;
@@ -1690,7 +1690,7 @@ footer ul
     height: 2px;
     width: 100%;
     position: absolute;
-    background: #1a1a1a;
+    background: $c-theme-bg-dark-accent-muted;
     bottom: 0;
 }
 
@@ -1730,7 +1730,7 @@ ul#footer-sidebar
     padding: 30px 0;
     font-size: 14px;
     line-height: 28px;
-    border-bottom: 2px solid #1a1a1a;
+    border-bottom: 2px solid $c-theme-bg-dark-accent-muted;
 }
 
 h4.widgettitle
