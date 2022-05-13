@@ -1,5 +1,6 @@
 <div class="doc-loader"></div>
 
+
 <div class="menu-wraper center-relative">
     <div class="menu-holder">
         <div class="menu-left-part">
@@ -10,11 +11,9 @@
         <div class="menu-right-part">
             <nav id="header-main-menu" class="big-menu">
                 <ul class="main-menu sm sm-clean">
-                    <li><a href="index.html" class="current">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    {% for item in site.data.menu %}
+                        <li><a href="{{ item.link }}" class="__current">{{ item.name }}</a></li>
+                    {% endfor %}
                 </ul>
                 <form role="search" class="search-form">
                     <label>
@@ -24,11 +23,9 @@
             </nav>
             <div class="menu-portfolio-category">
                 <p class="portfolio-category">
-                    <a href="#">Architecture</a>
-                    <a href="#">Branding</a>
-                    <a href="#">Fashion</a>
-                    <a href="#">Interior</a>
-                    <a href="#">Jewelry</a>
+                    {% for item in site.data.tags %}
+                        <a href="{{ item.link }}">{{ item.name }}</a>
+                    {% endfor %}
                 </p>
             </div>
         </div>
@@ -39,7 +36,7 @@
 <div class="header-holder center-relative relative content-1140">
     <div class="header-logo center-text">
         <a href="index.html">
-            <img src="images/logo_@x2.png" alt="Opta">
+            <img src="/assets/images/logo_@x2.png" alt="Babs Gösgens">
         </a>
     </div>
 
@@ -51,10 +48,4 @@
         </div>
     </div>
     <div class="clear"></div>
-</div>
-<div class="content-1140 header-content center-relative block">
-    <h1 class="entry-title">
-        Hallo, mijn naam is Babs en ik ben interieurontwerper in de regio Den Bosch. Dit is een greep uit mijn <a href="about.html">projecten</a>.
-    </h1>
-    <p class="page-desc">BABS GÖSGENS</p>
 </div>
