@@ -7,11 +7,11 @@ permalink: /contact/
 <div class="content-945 center-relative">
     <div class="one_third">
         <h2 class="big-text">
-            Hello, drop us a line or two
+            Hallo, hoe kan ik je helpen?
         </h2>
     </div>
     <div class="two_third last">
-        Why end might ask civil again spoil. She dinner she our horses depend. Remember at children by reserved to vicinity. In affronting unreserved delightful simplicity ye. Law own advantage furniture continual sweetness bed agreeable perpetual.
+        <p>Een keertje met mij om de tafel? Neem gerust contact op met me. Ik ben heel toegankelijk en ik kom graag een keertje bij je langs om je te helpen met jouw interieurproject.</p>
     </div>
     <div class="clear"></div>
     <br>
