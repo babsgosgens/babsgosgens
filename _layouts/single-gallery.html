@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    {% include head.html %}
+</head>
+<body class="single single-gallery">
+
+    {% include masthead.html %}
+
+    <div id="content" class="site-content">
+        <div class="gallery">
+            <h1 class="entry-title center-relative center-text">{{ page.title}}</h1>
+            <div class="center-relative clear">
+                <div class="entry-content">
+                    <div class="content-750 center-relative">
+                        {{ content }}
+                    </div>
+                    <div class="box-post-width content-1140 center-relative">
+                        {% assign image_path = page.permalink | append: "fulls" %}
+                        {% for image in site.static_files %}
+                          {% if image.path contains image_path %}
+                            <br><p><img class="animate aligncenter" src="{{ image.path }}" alt=""></p>
+                          {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="nav-links content-750 center-relative">
+            <div class="nav-previous">
+                <p>PREVIOUS STORY</p>
+                <a href="{{ page.previous_link }}">{{ page.previous_title }}</a>
+                <div class="clear"></div>
+            </div>
+
+            <div class="nav-next">
+                <p>NEXT STORY</p>
+                <a href="{{ page.next_link }}">{{ page.next_title }}</a>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    {% include footer.html %}
+</html>

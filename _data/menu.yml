@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: About
+  link: /about/
+- name: Blog
+  link: /blog/
+- name: Gallery
+  link: /gallery/
+- name: Projecten
+  link: /projecten/
+- name: Contact
+  link: /contact/
