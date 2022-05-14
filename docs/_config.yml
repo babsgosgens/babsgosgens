@@ -29,6 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: babsgosgens
 github_username:  babsgosgens
+autor: Babs Gösgens
 
 # Build settings
 theme: minima
@@ -36,13 +37,13 @@ sass:
     sass_dir: _sass
     style: compact # possible values: nested expanded compact compressed
 plugins:
-  - jekyll-feed
+    - jekyll-feed
 
 defaults:
   - scope:
-          path: "assets/images/moodboards"
-    values:
-          moodboard: true
+        path: "assets/images/moodboards"
+        values:
+              moodboard: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

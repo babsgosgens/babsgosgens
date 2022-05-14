@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    {% include head.html %}
+</head>
+<body class="single single-portfolio">
+
+    {% include masthead.html %}
+
+
+    <div id="content" class="site-content">
+        <div class="content-1140 center-relative bottom-100">
+            <div class="center-relative clear">
+                <div class="entry-content">
+                    <div class="top-content">
+                        <image class="animate" src="{{ page.cover }}" alt="{{ page.title }}">
+                    </div>
+                    <div class="content-970 center-relative">
+                        <div class="portfolio-item-info">
+                            <div class="item-info-content">
+                                <div class="info-code ">
+                                    <p class="info-code-content">{{ page.cover-title }}</p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-nav">
+                                <div class="nav-previous">
+                                    <a href="#">
+                                        <img src="/assets/images/template/opta_arrow@2x_left.png" alt="Previous">
+                                    </a>
+                                </div>
+                                <div class="nav-next">
+                                    <a href="#">
+                                        <img src="/assets/images/template/opta_arrow@2x.png" alt="Next">
+                                    </a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="content-wrapper">
+                            <h1 class="entry-title">
+                                {{ page.title }}
+                            </h1>
+                            {{ content }}
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    {% include footer.html %}
+</html>
