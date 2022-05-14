@@ -30,6 +30,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: babsgosgens
 github_username:  babsgosgens
 autor: Babs Gösgens
+robots: noindex
 
 # Build settings
 theme: minima
@@ -40,10 +41,13 @@ plugins:
     - jekyll-feed
 
 defaults:
-  - scope:
-        path: "assets/images/moodboards"
-        values:
-              moodboard: true
+  -
+    scope:
+      path: "assets/images/projects/moodboards" # an empty string here means all files in the project
+    values:
+      moodboard: true
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
