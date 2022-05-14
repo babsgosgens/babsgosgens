@@ -10,7 +10,7 @@
         </div>
         <div class="footer-text">
             <p class="footer-first-line">
-                <a href="mailto:hallo@babsgosgens.nl">hallo@babsgosgens.nl</a>
+                <a href="mailto:hallo@babsgosgens.nl">{{ site.email }}</a>
             </p>
             <p class="footer-second-line">
                 or can use our <a href="contact.html">contact form</a> as well
@@ -34,8 +34,8 @@
             <li class="widget widget_text">
                 <h4 class="widgettitle">Opta</h4>
                 <div class="textwidget">
-                    <p>Telefoon: {{ site.mobile }}</p>
-                    <p>Email: {{ site.email }}</p>
+                    <p>Telefoon: <a href="tel:{{ site.mobile }}">{{ site.mobile }}</a></p>
+                    <p>Email: <a href="mailto:{{ site.mobile }}">{{ site.email }}</a></p>
                 </div>
             </li>
             <li class="widget widget_recent_entries">
@@ -66,7 +66,7 @@
 
         <ul class="copyright-holder">
             <li class="copyright-footer">
-                © 2017 - COCO + BASIC
+                © {{ 'now' | date: "%Y" }} - Babs Gösgens
             </li>
             <li class="social-footer">
                 <a href="#">TWITTER</a>
