@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="nl-NL">
+    <head>
+        {% include head.html %}
+    </head>
+    <body class="page">
+
+        {% include masthead.html %}
+
+        <div id="content" class="site-content">
+            {{ content }}
+
+            <div class="blog-holder block center-relative content-1140">
+
+                {% for post in site.posts reversed limit: 3 %}
+                <article class="animate relative blog-item-holder center-relative has-post-thumbnail">
+                    <div class="post-thumbnail">
+
+                        <a href="{{ post.url }}">
+                            <img src="{{ post.cover }}" alt="" />
+                        </a>
+                    </div>
+                    <div class="entry-holder">
+                        <div class="post-num">
+                            <span class="current-post">{{ post.date | date: "%d" }}</span>
+                            <span class="separator">/</span>
+                            <span class="total-posts">{{ post.date | date: "%m" }}</span>
+                        </div>
+
+                        <div class="entry-info">
+                            <div class="entry-info-left">
+                                <div class="entry-date published">{{ post.date | date: "%b %d, %y" }}</div>
+                            </div>
+                            <div class="entry-info-right">
+                                <div class="author-nickname">
+                                    {{ site.author }}
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="entry-title">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h2>
+                        <p class="read-more-arrow">
+                            <a href="{{ post.url }}">
+                                <img src="/assets/images/template/blog_arrow@2x.png" alt="Read More">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                </article>
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+
+
+        {% include footer.html %}
+    </body>
+</html>

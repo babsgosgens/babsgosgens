@@ -29,8 +29,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: babsgosgens
 github_username:  babsgosgens
-autor: Babs Gösgens
+author: Babs Gösgens
 robots: noindex
+timezone: Europe/Amsterdam
 
 # Build settings
 theme: minima
@@ -41,11 +42,16 @@ plugins:
     - jekyll-feed
 
 defaults:
-  -
-    scope:
-      path: "assets/images/projects/moodboards" # an empty string here means all files in the project
-    values:
-      moodboard: true
+    -
+        scope:
+            path: "assets/images/projects/moodboards" # an empty string here means all files in the project
+        values:
+            moodboard: true
+    -
+        scope:
+            path: "_posts" # an empty string here means all files in the project
+        values:
+            layout: post
 
 
 

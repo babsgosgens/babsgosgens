@@ -43,7 +43,7 @@ body
 body a
 {
     text-decoration: none;
-    color: $c-theme-bg-dark-content;
+    color: $c-theme-bg-light-content;
     transition: color .2s linear;
 }
 
@@ -563,7 +563,7 @@ body a:hover
 
 .post-num span
 {
-    letter-spacing: -25px;
+    letter-spacing: -5px;
 }
 
 .post-num .separator
@@ -880,7 +880,7 @@ body a:hover
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: $c-theme-bg-dark-content;
+    color: $c-theme-bg-light-content;
 }
 
 .single-post .entry-content
@@ -896,7 +896,7 @@ body a:hover
 
 .single .post-num .current-post
 {
-    color: $c-theme-bg-dark-content;
+    color: $c-theme-bg-light-content;
 }
 
 .tags-holder
