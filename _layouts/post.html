@@ -47,14 +47,14 @@
             <div class="nav-links content-750 center-relative">
                 <div class="nav-previous">
                     {% if page.previous.url %}
-                        <p>PREVIOUS STORY</p>
-                        <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+                        <p>{{ "Vorige artikel" | upcase }}</p>
+                        <a href="{{page.previous.url}}">{{page.previous.title}}</a>
                     {% endif %}
                     <div class="clear"></div>
                 </div>
                 <div class="nav-next">
                     {% if page.next.url %}
-                        <p>NEXT STORY</p>
+                        <p>{{ "Volgende artikel" | upcase }}</p>
                         <a href="{{page.next.url}}">{{page.next.title}}</a>
                     {% endif %}
                     <div class="clear"></div>
