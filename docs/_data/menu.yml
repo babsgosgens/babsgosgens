@@ -1,10 +1,12 @@
 - name: Home
-  link: /index.html
+  link: /
 - name: About
-  link: /about.html
+  link: /about/
 - name: Blog
-  link: /blog.html
+  link: /blog/
 - name: Gallery
-  link: /gallery.html
+  link: /gallery/
+- name: Projecten
+  link: /projecten/
 - name: Contact
-  link: /contact.html
+  link: /contact/

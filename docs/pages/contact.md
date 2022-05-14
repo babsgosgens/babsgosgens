@@ -1,3 +1,9 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+---
+
 <div class="content-945 center-relative">
     <div class="one_third">
         <h2 class="big-text">
