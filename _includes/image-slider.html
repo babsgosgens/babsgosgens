@@ -4,12 +4,14 @@
     var slider_hover = "true";
     var slider_dots = "true";
 </script>
+HIERRR
 <div class="image-slider-wrapper relative">
     <div id="slider" class="image-slider slider">
         {% for image in page.slider_images %}
-        <div>
+        <figure>
             <img src="{{ image }}" alt="" />
-        </div>
+                <figcaption>Something nice</figcaption>
+        </figure>
         {% endfor %}
     </div>
 </div>

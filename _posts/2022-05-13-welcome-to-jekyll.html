@@ -2,8 +2,20 @@
 title:  "Welcome to Jekyll!"
 date:   2022-05-13 13:09:46 +
 cover: /assets/images/projects/african-retreat/african-retreat.jpg
+slider:
+    -
+        image: /assets/images/projects/african-retreat/fulls/02-algemeen.png
+        alt: somealt1
+        caption: "At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire her called. Fat son how smiling mrs natural expense anxious friends. Boy scale enjoy ask abode fanny being son."
+    -
+        image: /assets/images/projects/african-retreat/african-retreat.jpg
+        alt: somealt2
+        caption: somecaption2
+slider_speed: "'3500'"
+slider_auto: "'false'"
+slider_hover: "'true'"
+slider_dots: "'true'"
 ---
-
 
 <div class="content-750 center-relative">
     <p>Why end might ask civil again spoil. She dinner she our horses depend. Remember at children by reserved to vicinity. In affronting unreserved delightful simplicity ye. Law own advantage furniture continual sweetness bed agreeable perpetual. Oh song well four only head busy it. Afford son she had lively living. Tastes lovers myself too formal season our valley boy. Lived it their their walls might to by young and yet so old in the clouds blue sky pillow.</p>
@@ -12,25 +24,7 @@ cover: /assets/images/projects/african-retreat/african-retreat.jpg
     <br>
 </div>
 <div class="box-post-width content-1140 center-relative">
-    <script>
-        var slider_speed = "2000";
-        var slider_auto = "true";
-        var slider_hover = "true";
-        var slider_dots = "true";
-    </script>
-    <div class="image-slider-wrapper relative">
-        <div id="slider" class="image-slider slider">
-            <div>
-                <img src="{{ page.cover }}" alt="" />
-            </div>
-            <div>
-                <img src="{{ page.cover }}" alt="" />
-            </div>
-            <div>
-                <img src="{{ page.cover }}" alt="" />
-            </div>
-        </div>
-    </div>
+    {% include slider.html %}
 </div>
 <div class="content-750 center-relative">
     <br>

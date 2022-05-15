@@ -1,0 +1,32 @@
+{% if page.slider %}
+{% assign slider = page.slider %}
+{% endif %}
+
+{% unless slider %}
+{% else %}
+
+<script>
+    var slider_speed = {{ page.slider_speed | default: '"2000"'}};
+    var slider_auto = {{ page.slider_auto | default: '"true"'}};
+    var slider_hover = {{ page.slider_hover | default: '"true"'}};
+    var slider_dots = {{ page.slider_dots | default: '"true"'}};
+</script>
+<div class="image-slider-wrapper relative">
+    <div id="slider" class="image-slider slider">
+        {% for slide in slider %}
+        <div>
+            {% if slide.caption %}
+                <img src="{{ slide.image }}" alt="" />
+            {% endif %}
+
+            {% if slide.caption %}
+                <div class="content-750 center-relative">
+                    <p class="caption entry-info">{{ slide.caption }}</p>
+                </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endunless %}
