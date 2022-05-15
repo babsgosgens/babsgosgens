@@ -41,6 +41,8 @@ sass:
 plugins:
     - jekyll-feed
 
+# content settings
+permalink: /:categories/:title/
 defaults:
     -
         scope:
