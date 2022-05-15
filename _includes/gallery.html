@@ -1,0 +1,27 @@
+
+{% if page.gallery %}
+{% assign gallery = page.gallery %}
+{% endif %}
+
+{% unless gallery %}
+{% else %}
+
+<script>
+    var gallery_speed = {{ page.gallery_speed | default: '"2000"'}};
+    var gallery_auto = {{ page.gallery_auto | default: '"true"'}};
+</script>
+<div class="carousel-slider slider">
+    {% for item in gallery %}
+    <div class="gallery-item">
+        {% if item.image %}
+            <img src="{{ item.image }}" alt="" />
+        {% endif %}
+        {% if item.caption %}
+            <p class="item-text">
+                <a href="single-gallery.html">{{ item.caption }}</a>
+            </p>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endunless %}
