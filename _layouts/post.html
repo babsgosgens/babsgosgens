@@ -16,11 +16,11 @@
                             <div class="cat-links">
                                 <ul>
                                     <li>
-                                        <a href="#">Blog</a>
+                                        <a href="{{ page.category | prepend: "/" | append: "/" | baseurl }}">{{ page.category }}</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="entry-date published">{{ page.date | date: "%b %d, %Y" }}</div>
+                            <div class="entry-date published">{% include formatted_date_nl.html %}</div>
                         </div>
                         <div class="entry-info-right">
                             <div class="num-comments">

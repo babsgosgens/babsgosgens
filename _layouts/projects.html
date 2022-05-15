@@ -12,7 +12,7 @@
 
             <div class="blog-holder block center-relative content-1140">
 
-                {% for post in site.categories.projects limit: 3 %}
+                {% for post in site.categories.projecten limit: 3 %}
                 <article class="animate relative blog-item-holder center-relative has-post-thumbnail">
                     <div class="post-thumbnail">
 
@@ -29,7 +29,7 @@
 
                         <div class="entry-info">
                             <div class="entry-info-left">
-                                <div class="entry-date published">{{ post.date | date: "%b %d, %y" }}</div>
+                                <div class="entry-date published">{% include formatted_date_nl.html %}</div>
                             </div>
                             <div class="entry-info-right">
                                 <div class="author-nickname">
