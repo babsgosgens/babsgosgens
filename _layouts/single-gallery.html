@@ -27,20 +27,8 @@
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="nav-links content-750 center-relative">
-            <div class="nav-previous">
-                <p>PREVIOUS STORY</p>
-                <a href="{{ page.previous_link }}">{{ page.previous_title }}</a>
-                <div class="clear"></div>
-            </div>
 
-            <div class="nav-next">
-                <p>NEXT STORY</p>
-                <a href="{{ page.next_link }}">{{ page.next_title }}</a>
-                <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-        </div>
+        {% include post_navigation.html %}
     </div>
 
     <!--Footer-->

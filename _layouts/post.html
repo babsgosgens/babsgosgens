@@ -44,38 +44,7 @@
                 </div>
             </article>
 
-            {% assign cat_list = site.categories[page.category] %}
-            {% for post in cat_list %}
-              {% if post.url == page.url %}
-              	{% assign pOffset = forloop.index0 | minus: 1 %}
-              	{% assign nOffset = pOffset | plus: 2 %}
-              	{% if forloop.first == false %}
-              	  {% assign next_post = cat_list[pOffset] %}
-              	{% endif %}
-              	{% if forloop.last == false %}
-              	  {% assign previous_post = cat_list[nOffset] %}
-              	{% endif %}
-              	{% break %}
-              {% endif %}
-            {% endfor %}
-
-            <div class="nav-links content-750 center-relative">
-                <div class="nav-previous">
-                    {% if previous_post %}
-                        <p>{{ "Vorige artikel" | upcase }}</p>
-                        <a href="{{previous_post.url}}">{{previous_post.title}}</a>
-                    {% endif %}
-                    <div class="clear"></div>
-                </div>
-                <div class="nav-next">
-                    {% if next_post %}
-                        <p>{{ "Volgende artikel" | upcase }}</p>
-                        <a href="{{next_post.url}}">{{next_post.title}}</a>
-                    {% endif %}
-                    <div class="clear"></div>
-                </div>
-                <div class="clear"></div>
-            </div>
+            {% include post_navigation.html %}
         </div>
 
 
