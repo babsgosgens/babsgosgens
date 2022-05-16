@@ -18,7 +18,6 @@
         <div class="content-1140 center-relative bottom-100">
             <div class="center-relative clear">
                 <div class="entry-content">
-                    <h1 class="entry-title animate">{{ page.title }}</h1>
                     <div class="top-content">
 
                         <div class="animate">
@@ -28,6 +27,10 @@
                     <div class="content-970 center-relative">
                         <div class="portfolio-item-info">
                             <div class="item-info-content">
+                                <div class="info-code ">
+                                    <p class="info-code-title">Titel</p>
+                                    <p class="info-code-content">{{ page.title | upcase }}</p>
+                                </div>
                                 <div class="info-code ">
                                     <p class="info-code-title">Category</p>
                                     <p class="info-code-content">{{ page.category | upcase }}</p>
