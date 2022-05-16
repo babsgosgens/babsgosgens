@@ -2224,6 +2224,15 @@ li.social-footer a:first-child
         width: 100% !important;
     }
 
+    .slick-dots li button:before {
+        line-height: 10px;
+    }
+    .slick-dots li,
+    .slick-dots li button:before {
+        width: 10px;
+        height: 10px;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
