@@ -2,10 +2,10 @@
 category: projecten
 tags: interieurontwerp
 layout: single-portfolio
-title: Double Date
-date:   2022-05-16 09:00:00 +
-cover: /assets/images/posts/projects/double-date/double-date-00.jpg
-image_namespace: double-date
+title: Keuken met jaren ’30 invloeden
+date: 2022-05-13 09:00:00 +
+cover: /assets/images/posts/projects/keuken-met-jaren-30-invloeden/keuken-met-jaren-30-invloeden-04.jpg
+image_namespace: keuken-met-jaren-30-invloeden
 ---
 
 De concept store DoubleDate is een __fictief__ initiatief van een datingplatform, in samenwerking met lokale fashion merken.
