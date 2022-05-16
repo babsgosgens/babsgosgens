@@ -24,7 +24,8 @@
                         </div>
                         <div class="entry-info-right">
                             <div class="num-comments">
-                                <a href="#">3 Comments</a>
+                                {% assign tags = page.tags %}
+                                {{ page.tags | join: ", " | replace: "+", " " }}
                             </div>
                             <div class="author-nickname">
                                 {{ site.author }}
