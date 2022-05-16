@@ -5,12 +5,12 @@ layout: post
 title: Gastvrije werkruimte
 date:   2022-05-16 09:00:00 +
 cover: /assets/images/projects/gastvrije-werkruimte/gastvrije-werkruimte-02.jpg
-image_namespace: "projects/gastvrije-werkruimte"
+image_namespace: gastvrije-werkruimte
 ---
 
 {% assign slider_images = "" %}
 {% for image in site.static_files %}
-    {% if image.path contains 'gastvrije-werkruimte' %}
+    {% if image.path contains page.image_namespace %}
         {% assign slider_images = slider_images | append: " " | append: image.path %}
     {% endif %}
 {% endfor %}
