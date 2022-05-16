@@ -3,32 +3,55 @@
 <head>
     {% include head.html %}
 </head>
-<body class="single single-gallery">
+<body class="single single-portfolio">
 
     {% include masthead.html %}
+    {% assign slider_images = "" %}
+    {% for image in site.static_files %}
+        {% if image.path contains page.image_namespace %}
+            {% assign slider_images = slider_images | append: " " | append: image.path %}
+        {% endif %}
+    {% endfor %}
+    {% assign slider_images = slider_images | ltrim | split: " " %}
+
 
     <div id="content" class="site-content">
-        <div class="gallery">
-            <h1 class="entry-title center-relative center-text">{{ page.title}}</h1>
+        <div class="content-1140 center-relative bottom-100">
             <div class="center-relative clear">
                 <div class="entry-content">
-                    <div class="content-750 center-relative">
-                        {{ content }}
+                    <div class="top-content">
+                        <div class="animate">
+                            {% include carousel.html %}
+                        </div>
                     </div>
-                    <div class="box-post-width content-1140 center-relative">
-                        {% assign image_path = page.permalink | append: "fulls" %}
-                        {% for image in site.static_files %}
-                          {% if image.path contains image_path %}
-                            <br><p><img class="animate aligncenter" src="{{ image.path }}" alt=""></p>
-                          {% endif %}
-                        {% endfor %}
+                    <div class="content-970 center-relative">
+                        <div class="portfolio-item-info">
+                            <div class="item-info-content">
+                                <div class="info-code ">
+                                    <p class="info-code-title">Titel</p>
+                                    <p class="info-code-content">{{ page.title | upcase }}</p>
+                                </div>
+                                <div class="info-code ">
+                                    <p class="info-code-title">Category</p>
+                                    <p class="info-code-content">{{ page.category | upcase }}</p>
+                                </div>
+                                <div class="info-code ">
+                                    <p class="info-code-title">Tags</p>
+                                    {% assign tags = page.tags %}
+                                    <p class="info-code-content">{{ page.tags | join: ", " | replace: "+", " " | upcase }}</p>
+                                </div>
+                            </div>
+                            {% include portfolio_navigation.html %}
+                        </div>
+                        <div class="content-wrapper">
+                            {{ content }}
+                        </div>
+                        <div class="clear"></div>
                     </div>
                 </div>
                 <div class="clear"></div>
             </div>
         </div>
-
-        {% include post_navigation.html %}
     </div>
 
     <!--Footer-->

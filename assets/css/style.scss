@@ -2078,9 +2078,12 @@ li.social-footer a:first-child
 
     .info-code
     {
-        padding: 10px 20px;
-        display: inline-block;
+        padding: 0;
+        display: block;
         text-align: center;
+    }
+    .single-portfolio .top-content {
+        padding-bottom: 20px;
     }
 
     .grid-item.quote-item:before

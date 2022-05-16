@@ -1,0 +1,19 @@
+<script>
+    var gallery_speed = {{ page.gallery_speed | default: '"1500"'}} "1500";
+    var gallery_auto = {{ page.gallery_auto | default: '"true"'}};
+
+</script>
+
+<div class="carousel-slider slider">
+    {% for image_path in slider_images %}
+    {% assign caption = site.data.captions | where: "path", image_path  | first %}
+    <div class="gallery-item">
+        <img src="{{ image_path }}" alt="" />
+        {% if caption %}
+        <p class="item-text">
+            <a href="single-gallery.html">{{ caption.caption }}</a>
+        </p>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
