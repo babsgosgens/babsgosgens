@@ -9,8 +9,11 @@
 
         <div id="content" class="site-content">
             <article class="post">
-                <h1 class="entry-title">{{ page.title }}</h1>
+                <h1 class="entry-title animate">{{ page.title }}</h1>
                 <div class="center-relative clear">
+                    {% if page.cover %}
+                    <img class="animate" src="{{ page.cover }}" alt="" />
+                    {% endif %}
                     <div class="entry-info">
                         <div class="entry-info-left">
                             <div class="cat-links">
@@ -32,13 +35,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="post-num">
-                        <span class="current-post">{{ page.date | date: "%d" }}</span>
-                        <span class="separator">/</span>
-                        <span class="total-posts">{{ page.date | date: "%m" }}</span>
-                    </div>
 
-                    <div class="entry-content">
+                    <div class="entry-content content-945 center-relative">
                         {{ content }}
                     </div>
                     <div class="clear"></div>

@@ -1,0 +1,32 @@
+{% assign cat_list = site.categories[page.category] %}
+{% for post in cat_list %}
+  {% if post.url == page.url %}
+    {% assign pOffset = forloop.index0 | minus: 1 %}
+    {% assign nOffset = pOffset | plus: 2 %}
+    {% if forloop.first == false %}
+      {% assign next_post = cat_list[pOffset] %}
+    {% endif %}
+    {% if forloop.last == false %}
+      {% assign previous_post = cat_list[nOffset] %}
+    {% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<div class="portfolio-nav">
+    <div class="nav-previous">
+        {% if previous_post %}
+            <a href="{{previous_post.url}}">
+                <img src="/assets/images/template/arrow@2x_left.png" alt="Vorige: {{previous_post.title}}">
+            </a>
+        {% endif %}
+    </div>
+    <div class="nav-next">
+        {% if next_post %}
+            <a href="{{next_post.url}}">
+                <img src="/assets/images/template/arrow@2x.png" alt="Volgende: {{next_post.title}}">
+            </a>
+        {% endif %}
+    </div>
+    <div class="clear"></div>
+</div>
