@@ -16,14 +16,14 @@
 <div class="nav-links content-750 center-relative">
     <div class="nav-previous">
         {% if previous_post %}
-            <p>{{ "Vorige artikel" | upcase }}</p>
+            <p>{{ "Vorige" | upcase }}</p>
             <a href="{{previous_post.url}}">{{previous_post.title}}</a>
         {% endif %}
         <div class="clear"></div>
     </div>
     <div class="nav-next">
         {% if next_post %}
-            <p>{{ "Volgende artikel" | upcase }}</p>
+            <p>{{ "Volgende" | upcase }}</p>
             <a href="{{next_post.url}}">{{next_post.title}}</a>
         {% endif %}
         <div class="clear"></div>
