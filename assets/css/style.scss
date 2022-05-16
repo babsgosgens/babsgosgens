@@ -776,23 +776,30 @@ body a:hover
     padding: 10px 0;
 }
 
-.info-code-title
-{
-    font-size: 15px;
-    line-height: 15px;
-    font-style: italic;
-    color: $c-grey-03;
-    font-weight: 400;
-}
+// .info-code-title
+// {
+//     font-size: 15px;
+//     line-height: 15px;
+//     font-style: italic;
+//     color: $c-grey-03;
+//     font-weight: 400;
+// }
 
+.info-code-title,
 .info-code-content
 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 11px;
     line-height: 18px;
     letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $c-grey-03;
 }
+
+.info-code-content {
+    font-weight: 700;
+}
+
 
 .testimonial-slider-holder
 {
