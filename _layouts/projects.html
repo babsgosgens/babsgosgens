@@ -22,9 +22,9 @@
                     </div>
                     <div class="entry-holder">
                         <div class="post-num">
-                            <span class="current-post">{{ post.date | date: "%d" }}</span>
+                            <span class="current-post">{{ forloop.index }}</span>
                             <span class="separator">/</span>
-                            <span class="total-posts">{{ post.date | date: "%m" }}</span>
+                            <span class="total-posts">{{ forloop.length }}</span>
                         </div>
 
                         <div class="entry-info">
