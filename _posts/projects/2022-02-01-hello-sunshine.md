@@ -1,11 +1,11 @@
 ---
 category: projecten
 tags: interieurontwerp
-layout: single-portfolio
+layout: single-gallery
 title: Hello Sunshine
 date:   2022-02-01 13:00:00 +
-cover: /assets/images/posts/projects/moodboards/moodboard-bauhaus-glam.jpg
-image_namespace: moodboards
+cover: /assets/images/posts/projects/zonstudie/zonstudie-b5.png
+image_namespace: zonstudie
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere lobortis ante sit amet egestas.
