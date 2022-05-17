@@ -1,0 +1,71 @@
+home:
+    -   buzz: Warm
+        title: African Retreat
+        link: /projecten/african-retreat/
+        cover:
+            path: /assets/images/sampler/img_01.jpg
+            alt:
+    -   buzz: Thuis
+        title: Een kijkje in onze woning
+        link: /projecten/home-weet-home/
+        cover:
+            path: /assets/images/sampler/img_02.jpg
+            alt:
+    -   buzz: Gastvrij
+        title: Kantoor aan huis met ruimte voor logees
+        link: /projecten/interieurontwerp-van-werkruimte-met-gastvrije-logeerkamer/
+        cover:
+            path: /assets/images/sampler/img_03.jpg
+            alt:
+    -   buzz: Double Date
+        title: Winkelconcept voor een datingsite
+        link: /projecten/double-date/
+        cover:
+            path: /assets/images/sampler/img_04.jpg
+            alt:
+    -   buzz: Delen
+        title: Een grote hal wordt entree met werkruimte
+        link: /projecten/delen/
+        cover:
+            path: /assets/images/sampler/img_05.jpg
+            alt:
+    -   buzz: Terug
+        title: Een keuken met jaren 20 invloeden
+        link: /projecten/keuken-met-jaren-30-invloeden/
+        cover:
+            path: /assets/images/sampler/img_06.jpg
+            alt:
+    -   buzz: Micro
+        title: Een designer keuken op een budget
+        link: /projecten/delen/
+        cover:
+            path: /assets/images/sampler/img_07.jpg
+            alt:
+    -   buzz: Eetkuil
+        title: Een tuinontwerp met diepte
+        link: /projecten/delen/
+        cover:
+            path: /assets/images/sampler/img_09.jpg
+            alt:
+    -   buzz: Moody
+        title: Moodboards
+        link: /projecten/moodboards/
+        cover:
+            path: /assets/images/sampler/img_11.jpg
+            alt:
+    -   buzz: Meubels
+        title: Blondes are more fun
+        link: /projecten/delen/
+        cover:
+            path: /assets/images/sampler/img_08.jpg
+            alt:
+    -   buzz: Hello, sunshine!
+        title: Lichtinval, een studie
+        link: /projecten/delen/
+        cover:
+            path: /assets/images/sampler/img_10.jpg
+            alt:
+blog:
+    - one_half
+projects:
+    - one_half

@@ -17,19 +17,20 @@
 
         <div id="content" class="site-content">
             <ul class="grid" id="portfolio">
+                {% for item in site.data.featured.home limit:page.featured_limit %}
                 <li class="grid-item element-item animate">
                     <div class="item-wrapper">
-                        <a href="/projecten/african-retreat/">
-                            <img src="/assets/images/sampler/img_01.jpg" alt="" />
+                        <a href="{{ item.link }}">
+                            <img src="{{ item.cover.path }}" alt="{{ item.cover.alt }}" />
                         </a>
                         <div class="portfolio-text-holder">
                             <div class="portfolio-info">
-                                <a class="portfolio-text" href="/projecten/african-retreat/">Warm</a>
+                                <a class="portfolio-text" href="{{ item.link }}">{{ item.buzz }}</a>
                                 <p class="portfolio-category">
-                                    <a href="/projecten/african-retreat/">African Retreat</a>
+                                    <a href="{{ item.link }}">{{ item.title }}</a>
                                 </p>
                                 <p class="portfolio-arrow">
-                                    <a href="/projecten/african-retreat/">
+                                    <a href="{{ item.link }}">
                                         <img src="/assets/images/template/arrow@2x.png" alt="">
                                     </a>
                                 </p>
@@ -37,209 +38,12 @@
                         </div>
                     </div>
                 </li>
-                <li class="grid-item element-item animate">
-                    <div class="item-wrapper">
-                        <a href="single-portfolio.html">
-                            <img src="/assets/images/sampler/img_02.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-text-holder">
-                            <div class="portfolio-info">
-                                <a class="portfolio-text" href="single-portfolio.html">Thuis</a>
-                                <p class="portfolio-category">
-                                    <a href="#">Een kijkje in onze woning</a>
-                                </p>
-                                <p class="portfolio-arrow">
-                                    <a href="single-portfolio.html">
-                                        <img src="/assets/images/template/arrow@2x.png" alt="">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="grid-item element-item animate">
-                    <div class="item-wrapper">
-                        <a href="/projecten/interieurontwerp-van-werkruimte-met-gastvrije-logeerkamer/">
-                            <img src="/assets/images/sampler/img_03.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-text-holder">
-                            <div class="portfolio-info">
-                                <a class="portfolio-text" href="/projecten/interieurontwerp-van-werkruimte-met-gastvrije-logeerkamer/">Gastvrij</a>
-                                <p class="portfolio-category">
-                                    <a href="/projecten/interieurontwerp-van-werkruimte-met-gastvrije-logeerkamer/">Kantoor aan huis met ruimte voor logees</a>
-                                </p>
-                                <p class="portfolio-arrow">
-                                    <a href="/projecten/interieurontwerp-van-werkruimte-met-gastvrije-logeerkamer/">
-                                        <img src="/assets/images/template/arrow@2x.png" alt="">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                {% if forloop.index == 3 %}
                 <li class="grid-item element-item quote-item animate">
                     Als vormgever heb ik de prachtige taak om de best passende oplossing voor een ‘probleem’ te vinden.
                 </li>
-                <li class="grid-item element-item animate">
-                    <div class="item-wrapper">
-                        <a href="/projecten/double-date/">
-                            <img src="/assets/images/sampler/img_04.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-text-holder">
-                            <div class="portfolio-info">
-                                <a class="portfolio-text" href="/projecten/double-date/">Double Date</a>
-                                <p class="portfolio-category">
-                                    <a href="#">Winkelconcept voor een datingsite</a>
-                                </p>
-                                <p class="portfolio-arrow">
-                                    <a href="/projecten/double-date/">
-                                        <img src="/assets/images/template/arrow@2x.png" alt="">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="grid-item element-item animate">
-                    <div class="item-wrapper">
-                        <a href="/projecten/delen/">
-                            <img src="/assets/images/sampler/img_05.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-text-holder">
-                            <div class="portfolio-info">
-                                <a class="portfolio-text" href="/projecten/delen/">Delen</a>
-                                <p class="portfolio-category">
-                                    <a href="#">Een grote hal wordt entree met werkruimte</a>
-                                </p>
-                                <p class="portfolio-arrow">
-                                    <a href="/projecten/delen/">
-                                        <img src="/assets/images/template/arrow@2x.png" alt="">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="grid-item element-item animate">
-                    <div class="item-wrapper">
-                        <a href="/projecten/keuken-met-jaren-30-invloeden/">
-                            <img src="/assets/images/sampler/img_06.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-text-holder">
-                            <div class="portfolio-info">
-                                <a class="portfolio-text" href="/projecten/keuken-met-jaren-30-invloeden/">Terug</a>
-                                <p class="portfolio-category">
-                                    <a href="#">Een keuken met jaren 20 invloeden</a>
-                                </p>
-                                <p class="portfolio-arrow">
-                                    <a href="/projecten/keuken-met-jaren-30-invloeden/">
-                                        <img src="/assets/images/template/arrow@2x.png" alt="">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="grid-item element-item animate">
-                    <div class="item-wrapper">
-                        <a href="single-portfolio.html">
-                            <img src="/assets/images/sampler/img_07.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-text-holder">
-                            <div class="portfolio-info">
-                                <a class="portfolio-text" href="single-portfolio.html">Micro</a>
-                                <p class="portfolio-category">
-                                    <a href="#">Een designer keuken op een budget</a>
-                                </p>
-                                <p class="portfolio-arrow">
-                                    <a href="single-portfolio.html">
-                                        <img src="/assets/images/template/arrow@2x.png" alt="">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="grid-item element-item hidden">
-                    <div class="item-wrapper">
-                        <a href="single-portfolio.html">
-                            <img src="/assets/images/sampler/img_09.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-text-holder">
-                            <div class="portfolio-info">
-                                <a class="portfolio-text" href="single-portfolio.html">Diepte</a>
-                                <p class="portfolio-category">
-                                    <a href="#">Een tuinontwerp met een eetkuil</a>
-                                </p>
-                                <p class="portfolio-arrow">
-                                    <a href="single-portfolio.html">
-                                        <img src="/assets/images/template/arrow@2x.png" alt="">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="grid-item element-item hidden">
-                    <div class="item-wrapper">
-                        <a href="/projecten/moodboards/">
-                            <img src="/assets/images/sampler/img_11.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-text-holder">
-                            <div class="portfolio-info">
-                                <a class="portfolio-text" href="/projecten/moodboards/">Moody</a>
-                                <p class="portfolio-category">
-                                    <a href="/projecten/moodboards/">Moodboards</a>
-                                </p>
-                                <p class="portfolio-arrow">
-                                    <a href="/projecten/moodboards/">
-                                        <img src="/assets/images/template/arrow@2x.png" alt="">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="grid-item element-item hidden">
-                    <div class="item-wrapper">
-                        <a href="single-portfolio.html">
-                            <img src="/assets/images/sampler/img_08.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-text-holder">
-                            <div class="portfolio-info">
-                                <a class="portfolio-text" href="single-portfolio.html">Meubels</a>
-                                <p class="portfolio-category">
-                                    <a href="#">Blondes really do have more fun</a>
-                                </p>
-                                <p class="portfolio-arrow">
-                                    <a href="single-portfolio.html">
-                                        <img src="/assets/images/template/arrow@2x.png" alt="">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="grid-item element-item hidden">
-                    <div class="item-wrapper">
-                        <a href="single-portfolio.html">
-                            <img src="/assets/images/sampler/img_10.jpg" alt="" />
-                        </a>
-                        <div class="portfolio-text-holder">
-                            <div class="portfolio-info">
-                                <a class="portfolio-text" href="single-portfolio.html">Zonnig</a>
-                                <p class="portfolio-category">
-                                    <a href="#">Lichtinval, een studie</a>
-                                </p>
-                                <p class="portfolio-arrow">
-                                    <a href="single-portfolio.html">
-                                        <img src="/assets/images/template/arrow@2x.png" alt="">
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                {% endif %}
+                {% endfor %}
             </ul>
             <div class="clear"></div>
             <div class="block center-text load-more-portfolio">
