@@ -7,7 +7,7 @@ home:
             alt:
     -   buzz: Thuis
         title: Een kijkje in onze woning
-        link: /projecten/home-weet-home/
+        link: /projecten/een-kijkje-in-onze-woning/
         cover:
             path: /assets/images/sampler/img_02.jpg
             alt:
@@ -37,13 +37,13 @@ home:
             alt:
     -   buzz: Micro
         title: Een designer keuken op een budget
-        link: /projecten/delen/
+        link: /projecten/designer-keuken-op-een-budget/
         cover:
             path: /assets/images/sampler/img_07.jpg
             alt:
-    -   buzz: Eetkuil
-        title: Een tuinontwerp met diepte
-        link: /projecten/delen/
+    -   buzz: Diepgang
+        title: Een tuinontwerp met eetkuil
+        link: /projecten/tuinontwerp-met-eetkuil/
         cover:
             path: /assets/images/sampler/img_09.jpg
             alt:
@@ -53,15 +53,15 @@ home:
         cover:
             path: /assets/images/sampler/img_11.jpg
             alt:
-    -   buzz: Meubels
+    -   buzz: Meubelontwerp
         title: Blondes are more fun
-        link: /projecten/delen/
+        link: /projecten/meubelontwerpen/
         cover:
             path: /assets/images/sampler/img_08.jpg
             alt:
     -   buzz: Hello, sunshine!
         title: Lichtinval, een studie
-        link: /projecten/delen/
+        link: /projecten/hello-sunshine/
         cover:
             path: /assets/images/sampler/img_10.jpg
             alt:
