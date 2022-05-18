@@ -1,11 +1,12 @@
 ---
 category: projecten
 tags: interieurontwerp
-layout: single-portfolio
+layout: single-gallery
 title: Tuin met diepgang
 date: 2022-05-13 09:00:00 +
-cover: /assets/images/posts/projects/tuin-met-diepgang/00-tuin-met-diepgang.jpg
-image_namespace: tuin-met-diepgang
+cover: /assets/images/posts/projects/tuin-met-diepgang/cover.jpg
+heroes:
+image_namespace: tuin-met-diepgang/gallery
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 

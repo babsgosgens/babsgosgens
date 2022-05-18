@@ -4,8 +4,10 @@ tags: interieurontwerp
 layout: single-portfolio
 title: Double Date
 date:   2022-05-16 09:00:00 +
-cover: /assets/images/posts/projects/double-date/double-date-00.jpg
-image_namespace: double-date
+cover: /assets/images/posts/projects/double-date/cover.jpg
+heroes:
+    - /assets/images/posts/projects/double-date/hero.jpg
+image_namespace: double-date/gallery
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 

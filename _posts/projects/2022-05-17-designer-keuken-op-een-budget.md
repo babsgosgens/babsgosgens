@@ -4,8 +4,10 @@ tags: interieurontwerp
 layout: single-portfolio
 title: OSB en Microcement
 date:   2022-05-17 09:00:00 +
-cover: /assets/images/posts/projects/designer-keuken-op-een-budget/00-designer-keuken-op-een-budget.jpg
-image_namespace: designer-keuken-op-een-budget
+cover: /assets/images/posts/projects/designer-keuken-op-een-budget/cover.jpg
+heroes:
+    - assets/images/posts/projects/designer-keuken-op-een-budget/hero.jpg
+image_namespace: designer-keuken-op-een-budget/gallery
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
