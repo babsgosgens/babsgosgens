@@ -7,7 +7,7 @@ home:
             alt:
     -   buzz: Thuis
         title: Een kijkje in onze woning
-        link: /projecten/een-kijkje-in-onze-woning/
+        link: /projecten/een-kijkje-in-ons-thuis/
         cover:
             path: /assets/images/sampler/img_02.jpg
             alt:
@@ -41,9 +41,9 @@ home:
         cover:
             path: /assets/images/sampler/img_07.jpg
             alt:
-    -   buzz: Diepgang
-        title: Een tuinontwerp met eetkuil
-        link: /projecten/tuinontwerp-met-eetkuil/
+    -   buzz: Eetkuil
+        title: Een tuin met diepgang
+        link: /projecten/tuin-met-diepgang/
         cover:
             path: /assets/images/sampler/img_09.jpg
             alt:

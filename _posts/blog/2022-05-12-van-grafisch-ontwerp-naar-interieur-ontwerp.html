@@ -1,20 +1,23 @@
 ---
 title:  "Van grafisch ontwerp naar interieurontwerp"
 date:   2022-05-12 13:09:46 +
+layout: post
 cover:  /assets/images/posts/projects/african-retreat/african-retreat.jpg
-slider_images: ["/assets/posts/projects/african-retreat/african-retreat.jpg", "/assets/images/projects/african-retreat/african-retreat.jpg"]
 category: blog
+image_namespace: moodboard
 ---
+
+{% assign config = false %}
+{% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
 <div class="content-750 center-relative">
     <p>Ik moet er zelf nog een beetje aan wennen maar tegenwoordig mag ik mezelf een interieurontwerper noemen. Van mezelf, welteverstaan, want interieurontwerper is een vrij beroep en iedereen mag zich zo noemen.</p>
     <p>Het komt niet uit de lucht vallen. Ik bedoel, ik stond niet op een ochtend op en zei tegen mezelf “vandaag wordt ik interieurontwerper”. Het ging veel meer als de aanschaf van iets moois, heel duurs, waar je heel lang over na moet denken om het jezelf uiteindelijk toch te gunnen. Zoals een paar dure schoenen of een verre reis.</p>
     <br>
 </div>
-<div class="box-post-width content-1140 center-relative">
-{% include image-slider.html %}
+<div class="box-post-width content-1140 center-relative" style="margin-left: -80px;">
+    {% include image-slider.html %}
 </div>
 <div class="content-750 center-relative">
-    <br>
-    <p>Nu heb ik dan eindelijk de overstap gemaakt. Begrijp me niet verkeerd, ik ben altijd een creatief geweest. Ik begon ooit op de studio van een uitgeverij, maakte toen de overstap naar digitaal en heb dus altijd ontworpen. Daardoor ben ik een ervaren “luisteraar”. Mijn stille kracht is het vermogen om echt te kunnen horen waarnaar de klant op zoek is. Gesterkt door een creatieve geest kom ik altijd met verrassende oplossingen. Die ervaring neem ik mooi mee naar mijn nieuwe professie.</p>
+    <p>Nu ben ik altijd een creatief geweest. Ik begon ooit op de studio van een uitgeverij, maakte toen de overstap naar digitaal en heb dus altijd ontworpen. Daardoor ben ik een ervaren “luisteraar”. Mijn stille kracht is het vermogen om echt te kunnen horen waarnaar de klant op zoek is. Gesterkt door een creatieve geest kom ik altijd met verrassende oplossingen. Die ervaring neem ik mooi mee naar mijn nieuwe professie.</p>
 </div>

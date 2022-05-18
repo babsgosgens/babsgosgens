@@ -2,10 +2,10 @@
 category: projecten
 tags: interieurontwerp
 layout: single-portfolio
-title: Tuinontwerp met diepte
+title: Tuin met diepgang
 date: 2022-05-13 09:00:00 +
-cover: /assets/images/posts/projects/keuken-met-jaren-30-invloeden/keuken-met-jaren-30-invloeden-04.jpg
-image_namespace: keuken-met-jaren-30-invloeden
+cover: /assets/images/posts/projects/tuin-met-diepgang/00-tuin-met-diepgang.jpg
+image_namespace: tuin-met-diepgang
 ---
 
 De concept store DoubleDate is een __fictief__ initiatief van een datingplatform, in samenwerking met lokale fashion merken.

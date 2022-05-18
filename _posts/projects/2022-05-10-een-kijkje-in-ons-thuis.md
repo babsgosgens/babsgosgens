@@ -4,8 +4,8 @@ tags: interieurontwerp
 layout: single-portfolio
 title: Home Sweet Home
 date:   2022-05-10 13:09:46 +
-cover: /assets/images/posts/projects/moodboards/moodboard-bauhaus-glam.jpg
-image_namespace: moodboards
+cover: /assets/images/posts/projects/een-kijkje-in-ons-thuis/00-een-kijkje-in-ons-thuis.jpg
+image_namespace: een-kijkje-in-ons-thuis
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere lobortis ante sit amet egestas.

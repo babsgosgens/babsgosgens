@@ -4,9 +4,8 @@ tags: interieurontwerp
 layout: single-portfolio
 title: OSB en Microcement
 date:   2022-05-17 09:00:00 +
-cover: /assets/images/posts/projects/moodboards/moodboard-bauhaus-glam.jpg
-image_namespace: moodboards
-future: true
+cover: /assets/images/posts/projects/designer-keuken-op-een-budget/00-designer-keuken-op-een-budget.jpg
+image_namespace: designer-keuken-op-een-budget
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere lobortis ante sit amet egestas.
