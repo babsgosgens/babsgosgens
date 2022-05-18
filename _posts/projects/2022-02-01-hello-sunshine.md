@@ -7,6 +7,7 @@ date:   2022-02-01 13:00:00 +
 cover: /assets/images/posts/projects/zonstudie/zonstudie-b5.png
 image_namespace: zonstudie
 ---
+{% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere lobortis ante sit amet egestas.
 

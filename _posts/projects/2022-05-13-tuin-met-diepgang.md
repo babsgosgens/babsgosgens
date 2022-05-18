@@ -7,6 +7,7 @@ date: 2022-05-13 09:00:00 +
 cover: /assets/images/posts/projects/tuin-met-diepgang/00-tuin-met-diepgang.jpg
 image_namespace: tuin-met-diepgang
 ---
+{% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
 De concept store DoubleDate is een __fictief__ initiatief van een datingplatform, in samenwerking met lokale fashion merken.
 

@@ -7,6 +7,7 @@ date:   2022-05-16 09:00:00 +
 cover: /assets/images/posts/projects/double-date/double-date-00.jpg
 image_namespace: double-date
 ---
+{% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
 De concept store DoubleDate is een __fictief__ initiatief van een datingplatform, in samenwerking met lokale fashion merken.
 

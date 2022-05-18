@@ -5,8 +5,13 @@ layout: post
 title:  Onze droomkeuken – waarom én hoe ik zelf onze eigen keuken bouwde
 date:   2022-05-14 13:09:46 +
 cover: /assets/images/posts/projects/designer-keuken-op-een-budget/00-designer-keuken-op-een-budget.jpg
+slider_images:
+    - /assets/images/posts/projects/designer-keuken-op-een-budget/00-designer-keuken-op-een-budget.jpg
+    - /assets/images/posts/projects/designer-keuken-op-een-budget/00-designer-keuken-op-een-budget.jpg
+permalink: /blog/onze-zelfgebouwde-droomkeuken/
 ---
 
+{% include image-slider.html %}
 Van ontgoocheling tot droomkeuken – waarom én hoe ik zelf mijn eigen keuken bouwde.
 
 Het is vandaag bijna twee jaar geleden dat we onze zelf gebouwde keuken voor het eerst in gebruik namen. In een huishouden met twee opgroeiende mannen kun je niet voorkomen dat dingen in huis stuk gaan en met onze keuken is het niet anders. En dus vertoond het aanrecht krassen van onzorgvuldig gebruikte messen en kunnen kastdeurtjes hier en daar wel weer een likje verf gebruiken.
@@ -20,6 +25,7 @@ Nou ben ik wel een lastige klant. Ik kom met mijn eigen ontwerp aanzetten en er 
 Wee mij, want het plan is op dat moment geboren. We willen niet zo’n gladde keuken. We willen de sfeer van onze huis in Accra, Ghana terug halen. En we willen het zelf doen. Alles. We willen die ruwe, eerlijke uitstraling van eenvoudige materialen en gereedschappen.
 
 ## Het ontwerp
+
 
 In Ghana hadden we een vloer van cement. Dat was esthetische beslissing, want ik had een hekel aan de granito achtige vloerplaten die op dat moment in Accra overal werden gebruikt. Ik liet het cement op kleur maken met poederpigmenten die ik ergens op de kop had getikt en het resultaat was verbluffend mooi.
 

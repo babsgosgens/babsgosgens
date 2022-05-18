@@ -7,6 +7,7 @@ date: 2022-05-13 09:00:00 +
 cover: /assets/images/posts/projects/keuken-met-jaren-30-invloeden/keuken-met-jaren-30-invloeden-04.jpg
 image_namespace: keuken-met-jaren-30-invloeden
 ---
+{% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
 De concept store DoubleDate is een __fictief__ initiatief van een datingplatform, in samenwerking met lokale fashion merken.
 

@@ -7,7 +7,6 @@ category: blog
 image_namespace: moodboard
 ---
 
-{% assign config = false %}
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
 <div class="content-750 center-relative">
@@ -15,7 +14,7 @@ image_namespace: moodboard
     <p>Het komt niet uit de lucht vallen. Ik bedoel, ik stond niet op een ochtend op en zei tegen mezelf “vandaag wordt ik interieurontwerper”. Het ging veel meer als de aanschaf van iets moois, heel duurs, waar je heel lang over na moet denken om het jezelf uiteindelijk toch te gunnen. Zoals een paar dure schoenen of een verre reis.</p>
     <br>
 </div>
-<div class="box-post-width content-1140 center-relative" style="margin-left: -80px;">
+<div class="box-post-width content-1140 center-relative" style="">
     {% include image-slider.html %}
 </div>
 <div class="content-750 center-relative">

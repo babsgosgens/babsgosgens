@@ -7,6 +7,7 @@ date:   2022-05-12 13:09:46 +
 cover: /assets/images/posts/projects/moodboards/moodboard-bauhaus-glam.jpg
 image_namespace: moodboards
 ---
+{% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere lobortis ante sit amet egestas.
 
