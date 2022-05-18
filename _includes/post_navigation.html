@@ -1,18 +1,3 @@
-{% assign cat_list = site.categories[page.category] %}
-{% for post in cat_list %}
-  {% if post.url == page.url %}
-    {% assign pOffset = forloop.index0 | minus: 1 %}
-    {% assign nOffset = pOffset | plus: 2 %}
-    {% if forloop.first == false %}
-      {% assign next_post = cat_list[pOffset] %}
-    {% endif %}
-    {% if forloop.last == false %}
-      {% assign previous_post = cat_list[nOffset] %}
-    {% endif %}
-    {% break %}
-  {% endif %}
-{% endfor %}
-
 <div class="nav-links content-750 center-relative">
     <div class="nav-previous">
         {% if previous_post %}

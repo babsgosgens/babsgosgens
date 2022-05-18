@@ -1,0 +1,15 @@
+{% assign section = site.categories[page.category] %}
+{% for post in section %}
+  {% if post.url == page.url %}
+    {% assign current_offset = forloop.index %}
+    {% assign previous_offset = forloop.index0 | minus: 1 %}
+    {% assign next_offset = previous_offset | plus: 2 %}
+    {% if forloop.first == false %}
+      {% assign next_post = section[previous_offset] %}
+    {% endif %}
+    {% if forloop.last == false %}
+      {% assign previous_post = section[next_offset] %}
+    {% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
