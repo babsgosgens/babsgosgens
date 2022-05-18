@@ -2,7 +2,7 @@
 category: blog
 tags: interieurontwerp
 layout: post
-title:  Onze droomkeuken – waarom én hoe ik zelf onze eigen keuken bouwde
+title:  Onze droomkeuken – waarom ik zelf onze eigen keuken bouwde (en hoe)
 date:   2022-05-14 13:09:46 +
 cover: /assets/images/posts/projects/designer-keuken-op-een-budget/00-designer-keuken-op-een-budget.jpg
 slider_images:
@@ -10,7 +10,6 @@ slider_images:
     - /assets/images/posts/projects/designer-keuken-op-een-budget/00-designer-keuken-op-een-budget.jpg
 permalink: /blog/onze-zelfgebouwde-droomkeuken/
 ---
-
 {% include image-slider.html %}
 Van ontgoocheling tot droomkeuken – waarom én hoe ik zelf mijn eigen keuken bouwde.
 
