@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="info-code ">
                                     <p class="info-code-title">Category</p>
-                                    <p class="info-code-content">{{ page.category | upcase }}</p>
+                                    <p class="info-code-content"><a href="{{ page.category | prepend: "/" | append: "/" | baseurl }}">{{ page.category  | upcase }}</a></p>
                                 </div>
                                 <div class="info-code ">
                                     <p class="info-code-title">Tags</p>
