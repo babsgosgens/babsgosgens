@@ -6,13 +6,10 @@
 <body class="single single-portfolio">
 
     {% include masthead.html %}
-    {% assign slider_images = "" %}
-    {% for image in site.static_files %}
-        {% if image.path contains page.image_namespace %}
-            {% assign slider_images = slider_images | append: " " | append: image.path %}
-        {% endif %}
-    {% endfor %}
-    {% assign slider_images = slider_images | ltrim | split: " " %}
+    {% include navigation_logic.html %}
+
+    {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
+
 
     <div id="content" class="site-content">
         <div class="content-1140 center-relative bottom-100">

@@ -16,14 +16,14 @@
 <div class="portfolio-nav">
     <div class="nav-previous">
         {% if previous_post %}
-            <a href="{{previous_post.url}}">
+            <a href="{{previous_post.url}}" title="Vorig project">
                 <img src="/assets/images/template/arrow@2x_left.png" alt="Vorige: {{previous_post.title}}">
             </a>
         {% endif %}
     </div>
     <div class="nav-next">
         {% if next_post %}
-            <a href="{{next_post.url}}">
+            <a href="{{next_post.url}}" title="Volgend project">
                 <img src="/assets/images/template/arrow@2x.png" alt="Volgende: {{next_post.title}}">
             </a>
         {% endif %}
