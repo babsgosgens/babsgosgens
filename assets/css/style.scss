@@ -628,7 +628,7 @@ body a:hover
     display: none;
 }
 
-.blog-item-holder h2.entry-title
+h2.entry-title
 {
     display: block;
     font-family: 'Playfair Display', serif;
@@ -645,7 +645,7 @@ body a:hover
     height: 20px;
 }
 
-.blog-item-holder h2.entry-title:hover + .read-more-arrow img, .read-more-arrow img:hover
+h2.entry-title:hover + .read-more-arrow img, .read-more-arrow img:hover
 {
     transform: translate(10px);
 }
@@ -1897,6 +1897,7 @@ li.social-footer a:first-child
         font-size: 17px;
         line-height: 28px;
         text-align: center;
+        width: 100% !important; // Ugh :(
     }
 
     blockquote:before
@@ -1954,7 +1955,7 @@ li.social-footer a:first-child
 
     .content-970, .content-945, .content-750
     {
-        width: 95%;
+        width: 90%;
     }
 
     .menu-left-part
@@ -2041,7 +2042,7 @@ li.social-footer a:first-child
         padding-bottom: 20px;
     }
 
-    .blog-item-holder h2.entry-title
+    h2.entry-title
     {
         font-size: 40px;
     }
@@ -2303,4 +2304,22 @@ li.social-footer a:first-child
         max-height: 300px;
     }
 
+}
+
+.signature {
+    margin: 1em 0;
+    font-family: Zeyada;
+    font-size: 2em;
+    color: $c-theme-bg-dark-accent-muted;
+    &--align-start {
+        text-align: left;
+        left: .5em;
+    }
+    &--align-center {
+        text-align: center;
+    }
+    &--align-end {
+        text-align: right;
+        padding-right: .5em;
+    }
 }
