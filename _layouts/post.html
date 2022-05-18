@@ -6,20 +6,18 @@
     <body class="single">
 
         {% include masthead.html %}
+        {% include navigation_logic.html %}
 
         <div id="content" class="site-content">
             <article class="post">
-                <h1 class="entry-title animate">{{ page.title }}</h1>
-                <div class="center-relative clear">
-                    {% if page.cover %}
-                    <img class="animate" src="{{ page.cover }}" alt="" />
-                    {% endif %}
+                <h1 class="entry-title">{{ page.title }}</h1>
+                <div class="center-relative clear animate">
                     <div class="entry-info">
                         <div class="entry-info-left">
                             <div class="cat-links">
                                 <ul>
                                     <li>
-                                        <a href="{{ page.category | prepend: "/" | append: "/" | baseurl }}">{{ page.category }}</a>
+                                        <a href="#">{{ page.category }}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -28,16 +26,24 @@
                         <div class="entry-info-right">
                             <div class="num-comments">
                                 {% assign tags = page.tags %}
-                                {{ page.tags | join: ", " | replace: "+", " " }}
+                                <a href="#">{{ page.tags | join: ", " | replace: "+", " " | upcase }}</a>
                             </div>
                             <div class="author-nickname">
-                                {{ site.author }}
+                                <a href="#" title="Posts by Peter Wall">{{ site.author }}</a>
                             </div>
                         </div>
                     </div>
+                    <div class="post-num">
+                        <span class="current-post">{{ current_offset }}</span>
+                        <span class="separator">/</span>
+                        <span class="total-posts">{{ section.size }}</span>
+                    </div>
 
-                    <div class="entry-content content-945 center-relative">
+                    <div class="entry-content">
                         {{ content }}
+                        <div class="content-750 center-relative">
+                        <p class="signature signature--align-end"><3 Babs</p>
+                        </div>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -45,7 +51,6 @@
 
             {% include post_navigation.html %}
         </div>
-
 
         {% include footer.html %}
     </body>
