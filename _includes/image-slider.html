@@ -5,12 +5,21 @@
     var slider_dots = {{ page.slider_dots | default: '"true"'}};
 </script>
 
+{% if page.slider_images.size %}
+    {% assign slider_images = page.slider_images %}
+{% endif %}
+
+{% unless slider_images %}
+{% else %}
 <div class="image-slider-wrapper relative">
     <div id="slider" class="image-slider slider">
-        {% for image_path in slider_images %}
-        {% assign caption = site.data.captions | where: "path", image_path  | first %}
+        {% comment %}
+        WTH IS THIS GETTING A DIFFERENT OBJECT???
+        {% endcomment %}
+        {% for image in slider_images %}
+        {% assign caption = site.data.captions | where: "path", image.path  | first %}
         <figure>
-            <img src="{{ image_path }}" alt="" />
+                <img src="{{ image.path | default: image }}" alt="" />
                 {% if caption %}
                 <figcaption>{{ caption.caption }}</figcaption>
                 {% endif %}
@@ -18,3 +27,5 @@
         {% endfor %}
     </div>
 </div>
+{% endunless %}
+{% assign config = true %}
