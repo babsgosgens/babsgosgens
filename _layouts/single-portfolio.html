@@ -19,7 +19,6 @@
                             <h1 class="entry-title animate">
                                 {{ page.title }}
                             </h1>
-                            {% include image-slider.html %}
                         </div>
                     </div>
                     <div class="content-970 center-relative">
@@ -42,7 +41,12 @@
                             {% include portfolio_navigation.html %}
                         </div>
                         <div class="content-wrapper">
+                            {{ page.standfirst }}
+
+                            {% include image-slider.html %}
+
                             {{ content }}
+
                         </div>
                         <div class="clear"></div>
                     </div>
