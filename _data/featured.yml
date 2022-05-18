@@ -41,25 +41,29 @@ home:
         cover:
             path: /assets/images/sampler/img_07.jpg
             alt:
-    -   buzz: Eetkuil
+    -   state: hidden
+        buzz: Eetkuil
         title: Een tuin met diepgang
         link: /projecten/tuin-met-diepgang/
         cover:
             path: /assets/images/sampler/img_09.jpg
             alt:
-    -   buzz: Moody
+    -   state: hidden
+        buzz: Moody
         title: Moodboards
         link: /projecten/moodboards/
         cover:
             path: /assets/images/sampler/img_11.jpg
             alt:
-    -   buzz: Meubelontwerp
+    -   state: hidden
+        buzz: Meubelontwerp
         title: Blondes are more fun
         link: /projecten/meubelontwerpen/
         cover:
             path: /assets/images/sampler/img_08.jpg
             alt:
-    -   buzz: Hello, sunshine!
+    -   state: hidden
+        buzz: Hello, sunshine!
         title: Lichtinval, een studie
         link: /projecten/hello-sunshine/
         cover:

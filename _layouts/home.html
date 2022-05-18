@@ -18,7 +18,7 @@
         <div id="content" class="site-content">
             <ul class="grid" id="portfolio">
                 {% for item in site.data.featured.home limit:page.featured_limit %}
-                <li class="grid-item element-item animate">
+                <li class="grid-item element-item {{ item.state | default: 'animate' }}">
                     <div class="item-wrapper">
                         <a href="{{ item.link }}">
                             <img src="{{ item.cover.path }}" alt="{{ item.cover.alt }}" />
@@ -39,7 +39,7 @@
                     </div>
                 </li>
                 {% if forloop.index == 3 %}
-                <li class="grid-item element-item quote-item animate">
+                <li class="grid-item element-item quote-item {{ item.state | default: 'animate' }}">
                     Als vormgever heb ik de prachtige taak om de best passende oplossing voor een ‘probleem’ te vinden.
                 </li>
                 {% endif %}
