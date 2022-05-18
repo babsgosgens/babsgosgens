@@ -1,8 +1,8 @@
 <script>
-    var slider_speed = {{ page.slider_speed | default: '"2000"'}};
-    var slider_auto = {{ page.slider_auto | default: '"true"'}};
-    var slider_hover = {{ page.slider_hover | default: '"true"'}};
-    var slider_dots = {{ page.slider_dots | default: '"true"'}};
+    var {{ slider_id | default: 'slider' }}_speed = {{ page.slider_speed | default: '"2000"'}};
+    var {{ slider_id | default: 'slider' }}_auto = {{ page.slider_auto | default: '"true"'}};
+    var {{ slider_id | default: 'slider' }}_hover = {{ page.slider_hover | default: '"true"'}};
+    var {{ slider_id | default: 'slider' }}_dots = {{ page.slider_dots | default: '"true"'}};
 </script>
 
 {% if page.slider_images.size %}
@@ -12,7 +12,7 @@
 {% unless slider_images %}
 {% else %}
 <div class="image-slider-wrapper relative">
-    <div id="{{ slider_id | default 'slider' }}" class="image-slider slider">
+    <div id="{{ slider_id | default: 'slider' }}" class="image-slider slider">
         {% comment %}
         WTH IS THIS GETTING A DIFFERENT OBJECT???
         {% endcomment %}
