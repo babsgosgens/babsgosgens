@@ -634,7 +634,7 @@ h2.entry-title
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 44px;
-    line-height: 44px;
+    line-height: 1;
 }
 
 .read-more-arrow img
@@ -2225,6 +2225,11 @@ li.social-footer a:first-child
 
 
 @media screen and (max-width: 805px) {
+
+    h2.entry-title
+    {
+        font-size: 30px;
+    }
 
     p.custom-text-class, p.custom-field-class
     {
