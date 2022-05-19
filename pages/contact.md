@@ -2,6 +2,11 @@
 layout: default
 title: Contact
 permalink: /contact/
+meta:
+    description: Ik ben heel toegankelijk en ik kom graag een keertje bij je langs om je te helpen met jouw interieur project.
+    keywords:
+        - email
+        - contactformulier
 ---
 
 <div class="content-945 center-relative">
