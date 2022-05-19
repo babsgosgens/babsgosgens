@@ -4,8 +4,8 @@ tags: interieurontwerp
 layout: single-portfolio
 title: Moodboards
 date:   2022-05-12 13:09:46 +
-cover: /assets/images/posts/projects/moodboards/moodboard-bauhaus-glam.jpg
-image_namespace: moodboards
+cover: /assets/images/posts/projects/moodboards/cover.jpg
+image_namespace: moodboards/gallery
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
