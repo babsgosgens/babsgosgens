@@ -1,6 +1,8 @@
 ---
 category: projecten
-tags: interieurontwerp
+tags:
+    - interieurontwerp
+    - DIY
 layout: single-portfolio
 title: OSB en Microcement
 date:   2022-05-17 09:00:00 +
