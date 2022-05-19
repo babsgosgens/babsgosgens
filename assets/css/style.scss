@@ -763,7 +763,9 @@ h2.entry-title:hover + .read-more-arrow img, .read-more-arrow img:hover
     font-size: 11px;
     line-height: 15px;
     text-align: center;
+    text-transform: uppercase;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 
@@ -1163,10 +1165,10 @@ h2.entry-title:hover + .read-more-arrow img, .read-more-arrow img:hover
 .portfolio-text-holder
 {
     position: absolute;
-    top: 30px;
-    left: 30px;
-    bottom: 30px;
-    right: 30px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     font-size: 20px;
     background-color: white;
     text-align: center;
@@ -1212,7 +1214,7 @@ h2.entry-title:hover + .read-more-arrow img, .read-more-arrow img:hover
 
 .grid-item:hover .portfolio-text-holder
 {
-    opacity: 1;
+    opacity: .85;
 }
 
 .grid-item .portfolio-arrow img
