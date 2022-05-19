@@ -1114,21 +1114,21 @@ h2.entry-title:hover + .read-more-arrow img, .read-more-arrow img:hover
 {
     display: inline-block;
     position: relative;
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-    &::before {
-        border: 10px solid #FFFFFF;
-    }
-    &::after {
-        border: 4px solid #D5AC58;
-    }
+    // &::before,
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    // }
+    // &::before {
+    //     border: 10px solid #FFFFFF;
+    // }
+    // &::after {
+    //     border: 4px solid #D5AC58;
+    // }
 }
 
 .grid-item
@@ -2229,6 +2229,7 @@ li.social-footer a:first-child
     h2.entry-title
     {
         font-size: 30px;
+        line-height: 1;
     }
 
     p.custom-text-class, p.custom-field-class
