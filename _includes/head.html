@@ -1,4 +1,4 @@
-<title>Babs Gösgens – {{ page.title }}</title>
+<title>{{ page.title | default: site.title }}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="{{ page.meta.description | default: site.meta.description }}" />
 <meta name="keywords" content="{{ page.meta.keywords | default: site.meta.keywords | join: ", " }}" />
