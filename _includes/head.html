@@ -1,10 +1,10 @@
-<title>Babs Gösgens – Interieurontwerper in de regio Den Bosch</title>
+<title>Babs Gösgens – {{ page.title }}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Interieurontwerper in de regio Den Bosch" />
-<meta name="keywords" content="Interieurontwerp" />
-<meta name="author" content="Babs Gösgens" />
+<meta name="description" content="{{ page.meta.description | default: site.meta.description }}" />
+<meta name="keywords" content="{{ page.meta.keywords | default: site.meta.keywords | join: ", " }}" />
+<meta name="author" content="{{ page.author | default: site.meta.author | join: ", " }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name=”robots” content={{ site.robots }}>
+<meta name="robots" content="{{ page.meta.robots | default: site.meta.robots }}">
 
 <link rel="shortcut icon" href="/assets/images/favicon.ico" />
 
@@ -23,3 +23,4 @@
         <script src="/assets/js/html5.js"></script>
         <script src="/assets/js/respond.min.js"></script>
 <![endif]-->
+{{ page.meta | to_json }}
