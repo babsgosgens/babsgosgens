@@ -3,7 +3,7 @@ category: projecten
 tags:
     - interieurontwerp
     - DIY
-layout: single-portfolio
+layout: post
 title: OSB en Microcement
 date:   2022-05-17 09:00:00 +
 cover: /assets/images/posts/projects/designer-keuken-op-een-budget/cover.jpg
