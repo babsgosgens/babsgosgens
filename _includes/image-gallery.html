@@ -1,24 +1,18 @@
-<script>
-    var {{ slick_id | default: 'carousel' }}_speed = {{ page.gallery_speed | default: '"1500"'}};
-    var {{ slick_id | default: 'carousel' }}_auto = {{ page.gallery_auto | default: '"true"'}};
-    var {{ slick_id | default: 'carousel' }}_speed = {{ page.carousel_speed | default: '"1500"'}};
-    var {{ slick_id | default: 'carousel' }}_auto = {{ page.carousel_auto | default: '"true"'}};
-</script>
-
 {% if page.slider_images.size %}
     {% assign slider_images = page.slider_images %}
 {% endif %}
 
 {% unless slider_images %}
 {% else %}
-<div id="{{ slick_id | default: 'slider' }}" class="carousel-slider slider">
+<div>
     {% comment %}
     WTH IS THIS GETTING A DIFFERENT OBJECT???
     {% endcomment %}
     {% for image in slider_images %}
     {% assign caption = site.data.captions | where: "path", image.path  | first %}
-    <figure>
-            <img src="{{ image.path | default: image }}" alt="" />
+    <br>
+    <figure class="animate aligncenter">
+            <img src="{{ image.path | default: image }}" alt="" style="min-width: 100%" />
             {% if caption %}
             <figcaption>{{ caption.caption }}</figcaption>
             {% endif %}

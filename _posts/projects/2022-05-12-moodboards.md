@@ -1,7 +1,7 @@
 ---
 category: projecten
 tags: interieurontwerp
-layout: single-portfolio
+layout: single-gallery
 title: Moodboards
 date:   2022-05-12 13:09:46 +
 cover: /assets/images/posts/projects/moodboards/cover@450.jpg
