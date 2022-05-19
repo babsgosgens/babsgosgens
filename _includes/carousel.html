@@ -1,19 +1,27 @@
 <script>
-    var gallery_speed = {{ page.gallery_speed | default: '"1500"'}} "1500";
-    var gallery_auto = {{ page.gallery_auto | default: '"true"'}};
-
+    var {{ slick_id | default: 'carousel' }}_speed = {{ page.gallery_speed | default: '"1500"'}};
+    var {{ slick_id | default: 'carousel' }}_auto = {{ page.gallery_auto | default: '"true"'}};
 </script>
 
-<div class="carousel-slider slider">
-    {% for image_path in slider_images %}
-    {% assign caption = site.data.captions | where: "path", image_path  | first %}
-    <div class="gallery-item">
-        <img src="{{ image_path }}" alt="" />
-        {% if caption %}
-        <p class="item-text">
-            <a href="single-gallery.html">{{ caption.caption }}</a>
-        </p>
-        {% endif %}
-    </div>
+{% if page.slider_images.size %}
+    {% assign slider_images = page.slider_images %}
+{% endif %}
+
+{% unless slider_images %}
+{% else %}
+<div id="{{ slick_id | default: 'slider' }}" class="carousel-slider slider">
+    {% comment %}
+    WTH IS THIS GETTING A DIFFERENT OBJECT???
+    {% endcomment %}
+    {% for image in slider_images %}
+    {% assign caption = site.data.captions | where: "path", image.path  | first %}
+    <figure>
+            <img src="{{ image.path | default: image }}" alt="" />
+            {% if caption %}
+            <figcaption>{{ caption.caption }}</figcaption>
+            {% endif %}
+    </figure>
     {% endfor %}
 </div>
+{% endunless %}
+{% assign config = true %}
