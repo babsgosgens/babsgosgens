@@ -4,8 +4,8 @@ tags: interieurontwerp
 layout: single-gallery
 title: Hello Sunshine
 date:   2022-02-01 13:00:00 +
-cover: /assets/images/posts/projects/zonstudie/zonstudie-b5.png
-image_namespace: zonstudie
+cover: /assets/images/posts/projects/lichtval-studie/cover.jpg
+image_namespace: lichtval-studie/gallery
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 

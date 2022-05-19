@@ -4,8 +4,8 @@ tags: interieurontwerp
 layout: single-portfolio
 title: Home Sweet Home
 date:   2022-05-10 13:09:46 +
-cover: /assets/images/posts/projects/een-kijkje-in-ons-thuis/00-een-kijkje-in-ons-thuis.jpg
-image_namespace: een-kijkje-in-ons-thuis
+cover: /assets/images/posts/projects/een-kijkje-in-ons-huis/cover.jpg
+image_namespace: een-kijkje-in-ons-huis/gallery
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
