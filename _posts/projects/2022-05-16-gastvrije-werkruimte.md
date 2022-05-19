@@ -4,7 +4,7 @@ tags: interieurontwerp
 layout: single-portfolio
 title: Gastvrije werkruimte
 date:   2022-05-16 09:00:00 +
-cover: /assets/images/posts/projects/gastvrije-werkruimte/cover.jpg
+cover: /assets/images/posts/projects/gastvrije-werkruimte/cover_tall.jpg
 heroes:
     - assets/images/posts/projects/gastvrije-werkruimte/hero.jpg
 image_namespace: gastvrije-werkruimte/gallery

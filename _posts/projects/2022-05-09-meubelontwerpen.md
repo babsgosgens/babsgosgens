@@ -2,9 +2,9 @@
 category: projecten
 tags: meubelontwerp
 layout: single-portfolio
-title: Doodles
+title: Meubelschetsen
 date:   2022-05-09 13:09:46 +
-cover: /assets/images/posts/projects/meubels/cover.jpg
+cover: /assets/images/posts/projects/meubels/cover_tall.jpg
 image_namespace: meubels/gallery
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
