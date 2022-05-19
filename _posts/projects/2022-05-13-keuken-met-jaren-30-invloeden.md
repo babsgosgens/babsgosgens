@@ -4,8 +4,8 @@ tags: interieurontwerp
 layout: single-portfolio
 title: Keuken met jaren ’30 invloeden
 date: 2022-05-13 09:00:00 +
-cover: /assets/images/posts/projects/keuken-met-jaren-30-invloeden/keuken-met-jaren-30-invloeden-04.jpg
-image_namespace: keuken-met-jaren-30-invloeden
+cover: /assets/images/posts/projects/keuken-met-jaren-30-invloeden/cover.jpg
+image_namespace: keuken-met-jaren-30-invloeden/gallery
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
