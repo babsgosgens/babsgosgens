@@ -1,30 +1,27 @@
 <script>
-    var gallery_speed = "1500";
-    var gallery_auto = "false";
+    var {{ slick_id | default: 'carousel' }}_speed = {{ page.carousel_speed | default: '"1500"'}};
+    var {{ slick_id | default: 'carousel' }}_auto = {{ page.carousel_auto | default: '"false"'}};
 </script>
-<div class="carousel-slider slider">
-    <div class="gallery-item">
-        <img src="/assets/images/about_img-1024x440.jpg" alt="" />
-        <p>
-            <a href="single-gallery.html">One More Time</a>
-        </p>
-    </div>
-    <div class="gallery-item">
-        <img src="/assets/images/img_06_large-1024x539.jpg" alt="">
-        <p class="item-text">
-            <a href="single-gallery.html">Reminiscences from Paris</a>
-        </p>
-    </div>
-    <div class="gallery-item">
-        <img src="/assets/images/gallery_img.jpg" alt="" />
-        <p class="item-text">
-            <a href="single-gallery.html">Bottle of Life</a>
-        </p>
-    </div>
-    <div class="gallery-item">
-        <img src="/assets/images/img_01_large-1024x539.jpg" alt="" />
-        <p class="item-text">
-            <a href="single-gallery.html">Made With Love</a>
-        </p>
-    </div>
+
+{% if page.slider_images.size %}
+    {% assign slider_images = page.slider_images %}
+{% endif %}
+
+{% unless slider_images %}
+{% else %}
+<div id="{{ slick_id | default: 'slider' }}" class="carousel-slider slider">
+    {% comment %}
+    WTH IS THIS GETTING A DIFFERENT OBJECT???
+    {% endcomment %}
+    {% for image in slider_images %}
+    {% assign caption = site.data.captions | where: "path", image.path  | first %}
+    <figure>
+            <img src="{{ image.path | default: image }}" alt="" />
+            {% if caption %}
+            <figcaption>{{ caption.caption }}</figcaption>
+            {% endif %}
+    </figure>
+    {% endfor %}
 </div>
+{% endunless %}
+{% assign config = true %}

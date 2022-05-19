@@ -10,7 +10,6 @@
 
     {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
-
     <div id="content" class="site-content">
         <div class="content-1140 center-relative bottom-100">
             <div class="center-relative clear">
@@ -20,8 +19,8 @@
                             <h1 class="entry-title animate">
                                 {{ page.title }}
                             </h1>
-                            {% include carousel.html %}
                         </div>
+                                                    {% include image-gallery.html %}
                     </div>
                     <div class="content-970 center-relative">
                         <div class="portfolio-item-info">
@@ -43,6 +42,10 @@
                             {% include portfolio_navigation.html %}
                         </div>
                         <div class="content-wrapper">
+                            {{ page.standfirst }}
+
+
+
                             {{ content }}
                         </div>
                         <div class="clear"></div>

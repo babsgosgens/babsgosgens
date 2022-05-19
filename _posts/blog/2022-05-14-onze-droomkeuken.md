@@ -4,7 +4,7 @@ tags: interieurontwerp
 layout: post
 title:  Onze eigen keuken bouwen
 date:   2022-05-14 13:09:46 +
-cover: /assets/images/posts/projects/designer-keuken-op-een-budget/gallery/07-designer-keuken-op-een-budget.jpg
+cover: /assets/images/posts/blog/covers/keuken-render.jpg
 permalink: /blog/onze-zelfgebouwde-droomkeuken/
 ---
 
@@ -13,7 +13,7 @@ permalink: /blog/onze-zelfgebouwde-droomkeuken/
     <br>
 </div>
 <div class="box-post-width content-1140 center-relative">   
-    {% assign slider_id = 'aanrecht' %}
+    {% assign slick_id = 'aanrecht' %}
     {% assign image_namespace = 'blog/onze-droomkeuken' %}
     {% assign slider_images = site.static_files | where_exp: "item", "item.path contains image_namespace" %}                 
     {% include image-slider.html %}                                   
@@ -30,7 +30,7 @@ permalink: /blog/onze-zelfgebouwde-droomkeuken/
     <br>
 </div>
 <div class="box-post-width content-1140 center-relative">   
-    {% assign slider_id = 'impressie' %}
+    {% assign slick_id = 'impressie' %}
     {% assign image_namespace = 'designer-keuken-op-een-budget' %}
     {% assign slider_images = site.static_files | where_exp: "item", "item.path contains image_namespace" %}                 
     {% include image-slider.html %}                                   

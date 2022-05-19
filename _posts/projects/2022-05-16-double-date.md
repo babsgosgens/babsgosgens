@@ -4,7 +4,7 @@ tags: interieurontwerp
 layout: single-portfolio
 title: Double Date
 date:   2022-05-16 09:00:00 +
-cover: /assets/images/posts/projects/double-date/cover.jpg
+cover: /assets/images/posts/projects/double-date/cover@450w.jpg
 heroes:
     - /assets/images/posts/projects/double-date/hero.jpg
 image_namespace: double-date/gallery
