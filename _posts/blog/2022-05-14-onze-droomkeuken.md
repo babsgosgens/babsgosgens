@@ -16,7 +16,7 @@ permalink: /blog/onze-zelfgebouwde-droomkeuken/
     {% assign slick_id = 'aanrecht' %}
     {% assign image_namespace = 'blog/onze-droomkeuken' %}
     {% assign slider_images = site.static_files | where_exp: "item", "item.path contains image_namespace" %}                 
-    {% include image-slider.html %}                                   
+    {% include image_slider.html %}                                   
 </div>                    
 <div class="content-750 center-relative">
     <br/>
@@ -33,7 +33,7 @@ permalink: /blog/onze-zelfgebouwde-droomkeuken/
     {% assign slick_id = 'impressie' %}
     {% assign image_namespace = 'designer-keuken-op-een-budget' %}
     {% assign slider_images = site.static_files | where_exp: "item", "item.path contains image_namespace" %}                 
-    {% include image-slider.html %}                                   
+    {% include image_slider.html %}                                   
 </div>
 <div class="content-750 center-relative">
     <br>

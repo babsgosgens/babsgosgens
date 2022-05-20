@@ -2,19 +2,20 @@
 layout: default
 title: About
 permalink: /about/
-slider_texts: ["Als ervaren ontwerper zijn inleving en creativiteit mijn grootste talenten.", "Maar ik breng ook een goeie dosis pragmatiek mee. Met slimme ingrepen kun je zo veel doen.", "Ik ontwerp voor jou, passend bij wie jij bent en hoe je leeft."]
+slider_texts: ["Als ervaren ontwerper kan ik goed luisteren. Ik kom met inlevingsvermogen en scherpe problem-solving skills.", "Ik breng een goeie dosis pragmatiek mee. Met slimme ingrepen kun je zo veel doen.", "Ik ontwerp voor jou, precies passend bij wie jij bent en hoe je leeft maar ook passend bij je budget."]
 meta:
     description: Babs Gösgens is interieurontwerper in de regio Den Bosch.
     keywords:
         - Babs Gösgens
+image_namespace: een-kijkje-in-ons-huis/gallery
 ---
-
-<div class="content">
+{% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
+<div class="content single">
     <h1 class="entry-title center-relative center-text">Hallo, ik ben Babs Gösgens</h1>
-    <div class="center-relative clear">
+    <div class="center-relative site-content clear">
         <div class="entry-content">
             <div class="content-750 center-relative trailer">
-                <p>Als doorgewinterde ontwerper ben ik altijd bezig met het vinden van de beste oplossing voor een probleem. Dat doe ik vooral door heel goed naar een opdrachtgever te luisteren.</p>
+                <p>Ik ben interieurontwerper sinds 2020. Daarvoor was ik ruim 25 jaar werkzaam als website-ontwerper. Met heel veel plezier, mag ik wel zeggen. Toch fantaseerde ik stiekem over interieurontwerp. Toen ik een aantal jaar geleden ontdekte dat het merendeel van mijn boekenkast uit interieurboeken bestaat en dat mijn Pinterest vol staat met pins van interieurs, klikte het.</p>
                 <br />
             </div>
             <div class="box-page-width content-945 center-relative">
@@ -23,7 +24,17 @@ meta:
                 {% include text_slider.html %}
             </div>
             <div class="content-750 center-relative trailer">
-                <p>Ik heb op pas latere leeftijd de overstap gemaakt van webdesigner naar interieurontwerper. Ik ben altijd al bezig met interieurs dus toen ik op een dag ontdekte dat het merendeel van mijn boekenkast uit interieurboeken bestaat en dat mijn Pinterest vol zit met interieurs en meubels, klikte het.</p>
+                <p>Mijn persoonlijke woonstijl is erg geïnspireerd door Afrika. Ik heb daar mijn man ontmoet en onze zoon is er geboren. Invloeden uit onze tijd daar zijn overal in huis terug te vinden, wij worden daar heel blij van!</p>
+                <p>Elk ontwerp is uniek. Voordat ik een interieur ontwerp wil ik dan ook eerst weten waar jij blij van wordt. En hoe je leven eruitziet. Drukke baan, kinderen en huisdieren of vrijgezel – het heeft invloed op de keuzes die we samen maken voor je interieur. Maar het uitgangspunt is altijd hetzelfde: wie ben je, wat past bij je en wanneer voel jij je thuis?</p>
+
+                <blockquote class="inline-blockquote">
+                    <p>Het uitgangspunt voor een een ontwerp is altijd hetzelfde: wie ben je, wat past bij je en wanneer voel jij je thuis?</p>
+                </blockquote>
+
+                <div class="clear"></div>
+                <p>Elk ontwerp is uniek. Voordat ik een interieur ontwerp wil ik dan ook eerst weten waar jij blij van wordt. En hoe je leven eruitziet. Drukke baan, kinderen en huisdieren of vrijgezel – het heeft invloed op de keuzes die we samen maken voor je interieur. Maar het uitgangspunt is altijd hetzelfde: wat past bij jou? Waarin voel jij je thuis?</p>
+
+
                 <p class="signature signature--align-end"><3 Babs</p>
             </div>
         </div>
