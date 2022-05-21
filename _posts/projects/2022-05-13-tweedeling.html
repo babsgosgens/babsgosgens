@@ -12,12 +12,12 @@ gallery_display: gallery
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
-<p>Deze entree van een nieuwbouwwoning is erg ruim. De klant graag een oplossing om de ruimte ook anders te kunnen benutten en zou graag een kantoor aan huis realiseren. Behalve een werkplek wil zij ook voldoende opbergruimte voor zowel kantoorartikelen als tassen en schoenen, een garderobe en een spiegel.</p>
+<p>Deze entree van een nieuwbouwwoning is erg ruim. De klant wil graag een oplossing om de ruimte ook anders te kunnen benutten en zou graag een kantoor aan huis realiseren. Behalve een werkplek wil zij ook voldoende opbergruimte voor zowel kantoorartikelen als tassen en schoenen, een garderobe en een spiegel.</p>
 
-<p>Ik heb voor dit project twee verschillende voorstellen gemaakt. Ik noem ze ‘green-homecoming’ en ‘blue-boho’. De oplossing bestaat uit een gesloten roomdivider om eventuele tocht vanuit de entree op te vangen. In beide oplossingen laten glazen deuren (taatsdeuren/schuifdeuren) daglicht door naar de werkplek én beschermen tegen tocht.</p>
+<p>Ik heb voor dit project twee verschillende voorstellen gemaakt. Ik noem ze ‘green-homecoming’ en ‘blue-boho’. De oplossing bestaat uit een roomdivider met kastruimte die de ruimte in twee delen splitst, een soort en-suite in de gang. In beide oplossingen laten glazen deuren (taatsdeuren/schuifdeuren) daglicht door naar de werkplek én beschermen tegen tocht.</p>
 <br />
 {% for namespace in page.image_namespace %}
     {% assign slider_images = site.static_files | where_exp: "item", "item.path contains namespace" %}
     {% assign slick_id = 'slider' | append: forloop.index %}
-    {% include image_gallery.html %}
+    {% include image_slider.html %}
 {% endfor %}
