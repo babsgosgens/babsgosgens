@@ -19,7 +19,7 @@
                     {{ content }}
                     <br />
                 </div>
-                <div class="content-1140 center-relative trailer">
+                <div class="content-{% if page.gallery_display == 'slider' %}750{% else %}1140{% endif %} center-relative trailer">
                     {% case page.gallery_display %}
                       {% when "slider" %}
                          {% include image_slider.html %}
