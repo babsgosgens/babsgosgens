@@ -6,6 +6,7 @@ title:  Onze eigen keuken bouwen
 date:   2022-05-14 13:09:46 +
 cover: /assets/images/posts/blog/covers/keuken-render.jpg
 permalink: /blog/onze-zelfgebouwde-droomkeuken/
+draft: true
 ---
 
 <div class="content-750 center-relative">
