@@ -8,7 +8,7 @@ cover: /assets/images/posts/projects/gastvrije-werkruimte/cover_tall.jpg
 heroes:
     - assets/images/posts/projects/gastvrije-werkruimte/hero.jpg
 image_namespace: gastvrije-werkruimte/gallery
-gallery_display: gallery
+gallery_display: slider
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
