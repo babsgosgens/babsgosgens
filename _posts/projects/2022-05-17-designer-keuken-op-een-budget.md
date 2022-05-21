@@ -10,10 +10,12 @@ cover: /assets/images/posts/projects/designer-keuken-op-een-budget/cover@450w.jp
 heroes:
     - assets/images/posts/projects/designer-keuken-op-een-budget/hero.jpg
 image_namespace: designer-keuken-op-een-budget/gallery
-gallery_display: carousel
+gallery_display: slider
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere lobortis ante sit amet egestas.
+Voor onze eigen keuken wilden we geen standaard, kant-en-klare, (veel) te strakke nieuwbouwkeuken. We wilden een keuken zoals we die in Accra, Ghana hadden. Daar had je (ik heb het over de periode 2000-2006) géén keukenwinkels en al helemaal geen meubelboulevards. Wel een heleboel lokale vakmensen zoals stucadoors, timmerlui en rietvlechters – meestal gewoon langs de weg.
 
-Lacus venenatis Sed eu, imperdiet tellus congue, porttitor dolor. A great man, but of the living creature was brought about by the Aenean hendrerit lorem. In malesuada eu nulla sit amet aliquam. Etiam faucibus iaculis justo, tempor est quis, tempus orci. Donec nec sapien euismod accumsan nisl eget, rhoncus erat.
+Onze keuken bestond gewoon uit gestucte cellenbetonblokken, hele dikke (8cm!) live edge houten werkbladen en de vloer was een met de spatel aangebrachtte laag cement die met pigment op kleur werd gebracht. Gewoon losjes op het oog gemixed. Het was een heerlijke keuken, we herinneren ons nog menig borrelavondje met vrienden, al hangend aan de eetbar!
+
+Dus hier terug in Nederland voor ons niks glads, maar juist iets dat ons aan die tijd doet herinneren. En dus hebben we de keuken zelf gebouwd, met de donkere basiskasten van Ikea, beton ciré op de muren, het aanrecht en de vloer en donkerbruin gelakte OSB deurtjes. Allemaal zelf opgebouwd, gestuct én gezaagd. Mét Afrikaanse kunst, natuurlijk.
