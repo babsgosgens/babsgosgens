@@ -13,7 +13,7 @@ home:
             alt:
     -   buzz: Gastvrij
         title: Gastvrije werkruimte
-        link: /projecten/interieurontwerp-van-werkruimte-met-gastvrije-logeerkamer/
+        link: /projecten/gastvrije-werkruimte/
         cover:
             path: /assets/images/posts/projects/gastvrije-werkruimte/cover_tall.jpg
             alt:
@@ -60,7 +60,7 @@ home:
     -   state: hidden
         buzz: Delen
         title: Een grote hal wordt entree met werkruimte
-        link: /projecten/delen/
+        link: /projecten/tweedeling/
         cover:
             path: /assets/images/posts/projects/delen/cover@450w.jpg
             alt:
