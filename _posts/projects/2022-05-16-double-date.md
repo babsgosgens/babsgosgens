@@ -16,4 +16,4 @@ De concept store DoubleDate is een __fictief__ initiatief van een datingplatform
 
 Double Date is meer dan alleen een kledingwinkel, het is een ontmoetingsplaats. Hypermoderne technologie als holografie en virtual reality maakt van deze Concept Store een nieuwe hotspot in de stad.
 
-Het interieur is geïnspireerd door moderne, grootstedelijke architectuur en ruwe constructiematerialen als beton, staal en hout met als focus point centraal in de ruimte een café plein, in stijl van een romantisch Parijse bistro.
+Deze 3-dimensionale kast heeft meerdere functies. Naast opslag en product display dient de kast als scheiding tussen twee verschillende winkelfuncties. Aan de ene kant worden producten op verkocht en aan andere kant kunnen klanten aan tafel met een om met een stylist een outfit voor een opkomende date te plannen.
