@@ -1,7 +1,7 @@
 ---
 category: projecten
 tags: interieurontwerp
-layout: single-gallery
+layout: single-portfolio-simple
 title: Hello Sunshine
 date:   2022-02-01 13:00:00 +
 cover: /assets/images/posts/projects/lichtval-studie/cover@450w.jpg

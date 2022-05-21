@@ -1,7 +1,7 @@
 ---
 category: projecten
 tags: interieurontwerp
-layout: single-gallery
+layout: single-portfolio-simple
 title: African Retreat
 date:   2022-05-14 19:09:46 +
 cover: /assets/images/posts/projects/african-retreat/cover@450w.jpg

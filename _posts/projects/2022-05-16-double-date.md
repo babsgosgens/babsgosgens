@@ -1,13 +1,14 @@
 ---
 category: projecten
 tags: interieurontwerp
-layout: single-portfolio
+layout: single-portfolio-simple
 title: Double Date
 date:   2022-05-16 09:00:00 +
 cover: /assets/images/posts/projects/double-date/cover@450w.jpg
 heroes:
     - /assets/images/posts/projects/double-date/hero.jpg
 image_namespace: double-date/gallery
+gallery_display: slider
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
 
