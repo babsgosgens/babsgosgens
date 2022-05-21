@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="nl-NL">
+<head>
+    {% include head.html %}
+</head>
+<body class="single single-portfolio">
+
+    {% include masthead.html %}
+    {% include navigation_logic.html %}
+
+    {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
+
+    <div id="content single" class="site-content">
+        <h1 class="entry-title center-relative center-text">{{ page.title }}</h1>
+        <div class="post center-relative site-content clear">
+            <div class="entry-content">
+                <div class="content-750 center-relative trailer">
+
+                    {{ content }}
+                    <br />
+                </div>
+                <div class="content-1140 center-relative trailer">
+                    {% case page.gallery_display %}
+                      {% when "slider" %}
+                         {% include image_slider.html %}
+                      {% when "carousel" %}
+                         {% include carousel.html %}
+                      {% else %}
+                         {% include image_gallery.html %}
+                    {% endcase %}
+
+                    <br />
+                </div>
+                {% assign slick_id = 'two' %}
+            </div>
+            <div class="content-750 center-relative trailer nav-gallery">
+                {% include portfolio_navigation.html %}
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <!--Footer-->
+    {% include footer.html %}
+</html>

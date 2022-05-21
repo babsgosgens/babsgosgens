@@ -2338,3 +2338,11 @@ li.social-footer a:first-child
 .trailer {
     margin-bottom: 1em;
 }
+
+.nav-gallery {
+    text-align: center;
+    .portfolio-nav {
+        display: inline-block;
+        position: static !important;
+    }
+}
