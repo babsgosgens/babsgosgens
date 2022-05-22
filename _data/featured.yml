@@ -5,7 +5,7 @@ home:
         cover:
             path: /assets/images/posts/projects/african-retreat/cover@450w.jpg
             alt:
-    -   buzz: Micro
+    -   buzz: Beton Ciré
         title: Een designer keuken op een budget
         link: /projecten/designer-keuken-op-een-budget/
         cover:
@@ -58,8 +58,8 @@ home:
             path: /assets/images/posts/projects/moodboards/cover.jpg
             alt:
     -   state: hidden
-        buzz: Delen
-        title: Een grote hal wordt entree met werkruimte
+        buzz: Tweeledig
+        title: 2 Ontwerpen voor een entree
         link: /projecten/tweedeling/
         cover:
             path: /assets/images/posts/projects/delen/cover@450w.jpg
