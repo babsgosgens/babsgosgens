@@ -44,32 +44,11 @@ home:
             path: /assets/images/posts/projects/meubels/cover_tall.jpg
             alt:
     -   state: hidden
-        buzz: Thuis
-        title: Een kijkje in onze woning
-        link: /projecten/een-kijkje-in-ons-huis/
-        cover:
-            path: /assets/images/posts/projects/een-kijkje-in-ons-huis/cover.jpg
-            alt:
-    -   state: hidden
         buzz: Moody
         title: Moodboards
         link: /projecten/moodboards/
         cover:
             path: /assets/images/posts/projects/moodboards/cover.jpg
-            alt:
-    -   state: hidden
-        buzz: Tweeledig
-        title: 2 Ontwerpen voor een entree
-        link: /projecten/tweedeling/
-        cover:
-            path: /assets/images/posts/projects/delen/cover@450w.jpg
-            alt:
-    -   state: hidden
-        buzz: Hello, sunshine!
-        title: Lichtinval, een studie
-        link: /projecten/hello-sunshine/
-        cover:
-            path: /assets/images/posts/projects/lichtval-studie/cover@450.jpg
             alt:
 blog:
     - for_future_use

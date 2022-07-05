@@ -9,3 +9,5 @@ image_namespace: lichtval-studie/gallery
 gallery_display: gallery
 ---
 {% assign slider_images = site.static_files | where_exp: "item", "item.path contains page.image_namespace" %}
+
+Studieopdracht: lichtinval, kleur en ruimtelijkheid.
